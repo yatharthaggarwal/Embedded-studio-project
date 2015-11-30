@@ -1,0 +1,41 @@
+xst -intstyle ise -ifn "D:/FPGA Tutorial/SampleProject/sample_vhdl.xst" -ofn "D:/FPGA Tutorial/SampleProject/sample_vhdl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sample_ucf.ucf -p xc6slx9-tqg144-2 "sample_vhdl.ngc" sample_vhdl.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sample_ucf.ucf -p xc6slx9-tqg144-2 "sample_vhdl.ngc" sample_vhdl.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sample_vhdl_map.ncd sample_vhdl.ngd sample_vhdl.pcf 
+par -w -intstyle ise -ol high -mt off sample_vhdl_map.ncd sample_vhdl.ncd sample_vhdl.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sample_vhdl.twx sample_vhdl.ncd -o sample_vhdl.twr sample_vhdl.pcf -ucf sample_ucf.ucf 
+bitgen -intstyle ise -f sample_vhdl.ut sample_vhdl.ncd 
+bitgen -intstyle ise -f sample_vhdl.ut sample_vhdl.ncd 
+xst -intstyle ise -ifn "D:/FPGA Tutorial/SampleProject/sample_vhdl.xst" -ofn "D:/FPGA Tutorial/SampleProject/sample_vhdl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sample_ucf.ucf -p xc6slx9-tqg144-2 "sample_vhdl.ngc" sample_vhdl.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sample_vhdl_map.ncd sample_vhdl.ngd sample_vhdl.pcf 
+par -w -intstyle ise -ol high -mt off sample_vhdl_map.ncd sample_vhdl.ncd sample_vhdl.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sample_vhdl.twx sample_vhdl.ncd -o sample_vhdl.twr sample_vhdl.pcf -ucf sample_ucf.ucf 
+bitgen -intstyle ise -f sample_vhdl.ut sample_vhdl.ncd 
+xst -intstyle ise -ifn "D:/FPGA Tutorial/SampleProject/sample_vhdl.xst" -ofn "D:/FPGA Tutorial/SampleProject/sample_vhdl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sample_ucf.ucf -p xc6slx9-tqg144-2 "sample_vhdl.ngc" sample_vhdl.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sample_vhdl_map.ncd sample_vhdl.ngd sample_vhdl.pcf 
+par -w -intstyle ise -ol high -mt off sample_vhdl_map.ncd sample_vhdl.ncd sample_vhdl.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sample_vhdl.twx sample_vhdl.ncd -o sample_vhdl.twr sample_vhdl.pcf -ucf sample_ucf.ucf 
+bitgen -intstyle ise -f sample_vhdl.ut sample_vhdl.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sample_ucf.ucf -p xc6slx9-tqg144-2 "sample_vhdl.ngc" sample_vhdl.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sample_vhdl_map.ncd sample_vhdl.ngd sample_vhdl.pcf 
+par -w -intstyle ise -ol high -mt off sample_vhdl_map.ncd sample_vhdl.ncd sample_vhdl.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sample_vhdl.twx sample_vhdl.ncd -o sample_vhdl.twr sample_vhdl.pcf -ucf sample_ucf.ucf 
+bitgen -intstyle ise -f sample_vhdl.ut sample_vhdl.ncd 
+xst -intstyle ise -ifn "C:/Users/Yatharth/Documents/New folder/SampleProject/sample_vhdl.xst" -ofn "C:/Users/Yatharth/Documents/New folder/SampleProject/sample_vhdl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sample_ucf.ucf -p xc6slx9-tqg144-2 "sample_vhdl.ngc" sample_vhdl.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sample_vhdl_map.ncd sample_vhdl.ngd sample_vhdl.pcf 
+par -w -intstyle ise -ol high -mt off sample_vhdl_map.ncd sample_vhdl.ncd sample_vhdl.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sample_vhdl.twx sample_vhdl.ncd -o sample_vhdl.twr sample_vhdl.pcf -ucf sample_ucf.ucf 
+bitgen -intstyle ise -f sample_vhdl.ut sample_vhdl.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sample_ucf.ucf -p xc6slx9-tqg144-2 "sample_vhdl.ngc" sample_vhdl.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sample_vhdl_map.ncd sample_vhdl.ngd sample_vhdl.pcf 
+par -w -intstyle ise -ol high -mt off sample_vhdl_map.ncd sample_vhdl.ncd sample_vhdl.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sample_vhdl.twx sample_vhdl.ncd -o sample_vhdl.twr sample_vhdl.pcf -ucf sample_ucf.ucf 
+bitgen -intstyle ise -f sample_vhdl.ut sample_vhdl.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sample_ucf.ucf -p xc6slx9-tqg144-2 "sample_vhdl.ngc" sample_vhdl.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sample_vhdl_map.ncd sample_vhdl.ngd sample_vhdl.pcf 
+par -w -intstyle ise -ol high -mt off sample_vhdl_map.ncd sample_vhdl.ncd sample_vhdl.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml sample_vhdl.twx sample_vhdl.ncd -o sample_vhdl.twr sample_vhdl.pcf -ucf sample_ucf.ucf 
+bitgen -intstyle ise -f sample_vhdl.ut sample_vhdl.ncd 

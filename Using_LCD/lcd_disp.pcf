@@ -1,0 +1,16 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Nov 30 16:03:10 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "lcd_rw" LOCATE = SITE "P123" LEVEL 1;
+COMP "data<1>" LOCATE = SITE "P114" LEVEL 1;
+COMP "data<2>" LOCATE = SITE "P115" LEVEL 1;
+COMP "data<3>" LOCATE = SITE "P116" LEVEL 1;
+COMP "data<4>" LOCATE = SITE "P117" LEVEL 1;
+COMP "data<5>" LOCATE = SITE "P118" LEVEL 1;
+COMP "data<6>" LOCATE = SITE "P119" LEVEL 1;
+COMP "data<7>" LOCATE = SITE "P120" LEVEL 1;
+COMP "lcd_e" LOCATE = SITE "P121" LEVEL 1;
+SCHEMATIC END;
+

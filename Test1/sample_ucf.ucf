@@ -1,0 +1,6 @@
+NET "C" LOC = P119;
+NET "A" LOC = P121;
+NET "B" LOC = P120;
+
+NET "A" PULLUP;
+NET "B" PULLUP;

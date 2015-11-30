@@ -1,0 +1,3 @@
+NET "lcd_rw" LOC = P105;
+NET "lcd_e" LOC = P105;
+NET "lcd_rs" LOC = P105;
