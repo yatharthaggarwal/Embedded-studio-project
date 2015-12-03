@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.53 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.56 secs
  
 --> Reading design: lcd_disp.prj
 
@@ -126,12 +126,12 @@ Synthesizing Unit <lcd_disp>.
     Found 32-bit register for signal <j>.
     Found 1-bit register for signal <lcd_rs>.
     Found 32-bit register for signal <i>.
-    Found 32-bit adder for signal <i[31]_GND_5_o_add_5_OUT> created at line 32.
-    Found 32-bit adder for signal <j[31]_GND_5_o_add_7_OUT> created at line 35.
+    Found 32-bit adder for signal <i[31]_GND_5_o_add_5_OUT> created at line 33.
+    Found 32-bit adder for signal <j[31]_GND_5_o_add_7_OUT> created at line 36.
     Found 32x8-bit Read Only RAM for signal <j[4]_X_5_o_wide_mux_2_OUT>
-    Found 32-bit comparator greater for signal <n0001> created at line 27
-    Found 32-bit comparator greater for signal <GND_5_o_i[31]_LessThan_5_o> created at line 31
-    Found 32-bit comparator greater for signal <n0019> created at line 38
+    Found 32-bit comparator greater for signal <n0001> created at line 28
+    Found 32-bit comparator greater for signal <GND_5_o_i[31]_LessThan_5_o> created at line 32
+    Found 32-bit comparator greater for signal <n0019> created at line 39
     Summary:
 	inferred   1 RAM(s).
 	inferred   2 Adder/Subtractor(s).
@@ -395,8 +395,8 @@ clk            |    8.611|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 18.00 secs
-Total CPU time to Xst completion: 17.87 secs
+Total REAL time to Xst completion: 28.00 secs
+Total CPU time to Xst completion: 27.19 secs
  
 --> 
 

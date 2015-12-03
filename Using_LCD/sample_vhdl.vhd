@@ -13,6 +13,7 @@ port (   clk : in std_logic; ----clock i/p
 			lcd_rs : out std_logic; ----data or command control
 			data : out std_logic_vector(7 downto 0)); ---data line
 end lcd_disp;
+
 architecture Behavioral of lcd_disp is
 	constant N: integer :=22;
 	type arr is array (1 to N) of std_logic_vector(7 downto 0);

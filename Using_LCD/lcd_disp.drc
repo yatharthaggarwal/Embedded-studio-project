@@ -1,7 +1,7 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Mon Nov 30 16:04:02 2015
+Thu Dec 03 11:14:15 2015
 
 drc -z lcd_disp.ncd lcd_disp.pcf
 

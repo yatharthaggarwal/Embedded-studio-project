@@ -144,7 +144,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1448877009" xil_pn:in_ck="-1817716298644982913" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="2149430901996875748" xil_pn:start_ts="1448876988">
+    <transform xil_pn:end_ts="1448973220" xil_pn:in_ck="-1817716298644982913" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="2149430901996875748" xil_pn:start_ts="1448973187">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -162,11 +162,11 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1448880186" xil_pn:in_ck="3993369244212846" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="2239116893867840250" xil_pn:start_ts="1448880186">
+    <transform xil_pn:end_ts="1449120668" xil_pn:in_ck="3993369244212846" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="2239116893867840250" xil_pn:start_ts="1449120668">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1448880227" xil_pn:in_ck="-3697530015295104469" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-7343781496325857155" xil_pn:start_ts="1448880186">
+    <transform xil_pn:end_ts="1449120685" xil_pn:in_ck="-3697530015295104469" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-7343781496325857155" xil_pn:start_ts="1449120668">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_ngo"/>
@@ -175,46 +175,52 @@
       <outfile xil_pn:name="lcd_disp.ngd"/>
       <outfile xil_pn:name="lcd_disp_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1448880245" xil_pn:in_ck="1776473367792238605" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1448924893915930207" xil_pn:start_ts="1448880227">
-      <status xil_pn:value="FailedRun"/>
+    <transform xil_pn:end_ts="1449120707" xil_pn:in_ck="1776473367792238605" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1448924893915930207" xil_pn:start_ts="1449120685">
+      <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="lcd_disp.pcf"/>
       <outfile xil_pn:name="lcd_disp_map.map"/>
       <outfile xil_pn:name="lcd_disp_map.mrp"/>
+      <outfile xil_pn:name="lcd_disp_map.ncd"/>
       <outfile xil_pn:name="lcd_disp_map.ngm"/>
       <outfile xil_pn:name="lcd_disp_map.xrpt"/>
       <outfile xil_pn:name="lcd_disp_summary.xml"/>
       <outfile xil_pn:name="lcd_disp_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1448879621" xil_pn:in_ck="350336842430089119" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-6780099238861732004" xil_pn:start_ts="1448879593">
+    <transform xil_pn:end_ts="1449120726" xil_pn:in_ck="350336842430089119" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-6780099238861732004" xil_pn:start_ts="1449120707">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="lcd_disp.ncd"/>
+      <outfile xil_pn:name="lcd_disp.pad"/>
+      <outfile xil_pn:name="lcd_disp.par"/>
+      <outfile xil_pn:name="lcd_disp.ptwx"/>
+      <outfile xil_pn:name="lcd_disp.unroutes"/>
+      <outfile xil_pn:name="lcd_disp.xpi"/>
+      <outfile xil_pn:name="lcd_disp_pad.csv"/>
+      <outfile xil_pn:name="lcd_disp_pad.txt"/>
+      <outfile xil_pn:name="lcd_disp_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1448879662" xil_pn:in_ck="-2913770026524467753" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="4970201210546912173" xil_pn:start_ts="1448879633">
+    <transform xil_pn:end_ts="1449121473" xil_pn:in_ck="-2913770026524467753" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="4970201210546912173" xil_pn:start_ts="1449121448">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="lcd_disp.bgn"/>
+      <outfile xil_pn:name="lcd_disp.bin"/>
+      <outfile xil_pn:name="lcd_disp.bit"/>
+      <outfile xil_pn:name="lcd_disp.drc"/>
+      <outfile xil_pn:name="lcd_disp.ut"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1448879621" xil_pn:in_ck="-1368954325064534139" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1448879610">
+    <transform xil_pn:end_ts="1449120726" xil_pn:in_ck="-1368954325064534139" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1449120719">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="lcd_disp.twr"/>
+      <outfile xil_pn:name="lcd_disp.twx"/>
     </transform>
     <transform xil_pn:end_ts="1448876090" xil_pn:in_ck="-5242345716755038083" xil_pn:name="TRAN_postSynthesisSimModel" xil_pn:prop_ck="493955673363080857" xil_pn:start_ts="1448876086">
       <status xil_pn:value="SuccessfullyRun"/>
