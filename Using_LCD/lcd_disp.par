@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-YATHARTH::  Thu Dec 03 11:01:48 2015
+YATHARTH::  Wed Dec 09 15:49:27 2015
 
 par -w -intstyle ise -ol high -mt off lcd_disp_map.ncd lcd_disp.ncd
 lcd_disp.pcf 
@@ -45,7 +45,7 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    52 out of   1,430    3%
+  Number of occupied Slices:                    46 out of   1,430    3%
   Number of MUXCYs used:                        88 out of   2,860    3%
   Number of LUT Flip Flop pairs used:          150
     Number with an unused Flip Flop:            90 out of     150   60%
@@ -99,28 +99,28 @@ Finished initial Timing Analysis.  REAL time: 6 secs
 Starting Router
 
 
-Phase  1  : 651 unrouted;      REAL time: 6 secs 
+Phase  1  : 647 unrouted;      REAL time: 6 secs 
 
-Phase  2  : 542 unrouted;      REAL time: 7 secs 
+Phase  2  : 538 unrouted;      REAL time: 6 secs 
 
-Phase  3  : 185 unrouted;      REAL time: 7 secs 
+Phase  3  : 182 unrouted;      REAL time: 6 secs 
 
-Phase  4  : 185 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
+Phase  4  : 182 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
 
 Updating file: lcd_disp.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
-Total REAL time to Router completion: 8 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
+Total REAL time to Router completion: 7 secs 
 Total CPU time to Router completion: 7 secs 
 
 Partition Implementation Status
@@ -141,8 +141,8 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     8.519ns|     N/A|           0
-  _BUFGP                                    | HOLD        |     0.416ns|            |       0|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     7.924ns|     N/A|           0
+  _BUFGP                                    | HOLD        |     0.415ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -158,10 +158,10 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 9 secs 
+Total REAL time to PAR completion: 8 secs 
 Total CPU time to PAR completion: 8 secs 
 
-Peak Memory Usage:  362 MB
+Peak Memory Usage:  353 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

@@ -1,0 +1,105 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2
+-n 3 -fastpaths -xml lcd_disp.twx lcd_disp.ncd -o lcd_disp.twr lcd_disp.pcf
+-ucf he.ucf
+
+Design file:              lcd_disp.ncd
+Physical constraint file: lcd_disp.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock button to Pad
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                       | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)      | Phase  |
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+data<0>     |        14.600(F)|      SLOW  |         7.239(F)|      FAST  |button_data[7]_AND_83_o|   0.000|
+data<1>     |        14.680(F)|      SLOW  |         7.329(F)|      FAST  |button_data[7]_AND_81_o|   0.000|
+data<2>     |        15.960(F)|      SLOW  |         8.077(F)|      FAST  |button_data[7]_AND_79_o|   0.000|
+data<3>     |        14.774(F)|      SLOW  |         7.318(F)|      FAST  |button_data[7]_AND_77_o|   0.000|
+data<4>     |        14.539(F)|      SLOW  |         7.170(F)|      FAST  |button_data[7]_AND_75_o|   0.000|
+data<5>     |        14.825(F)|      SLOW  |         7.362(F)|      FAST  |button_data[7]_AND_73_o|   0.000|
+data<6>     |        14.670(F)|      SLOW  |         7.296(F)|      FAST  |button_data[7]_AND_71_o|   0.000|
+data<7>     |        14.950(F)|      SLOW  |         7.432(F)|      FAST  |button_data[7]_AND_69_o|   0.000|
+lcd_e       |        12.836(F)|      SLOW  |         6.238(F)|      FAST  |button_lcd_e_AND_67_o  |   0.000|
+lcd_rs      |        13.453(F)|      SLOW  |         6.603(F)|      FAST  |button_lcd_rs_AND_149_o|   0.000|
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+data<0>     |        10.211(R)|      SLOW  |         4.233(R)|      FAST  |clk_BUFGP         |   0.000|
+data<1>     |         9.960(R)|      SLOW  |         3.927(R)|      FAST  |clk_BUFGP         |   0.000|
+data<2>     |         9.640(R)|      SLOW  |         3.943(R)|      FAST  |clk_BUFGP         |   0.000|
+data<3>     |        10.358(R)|      SLOW  |         4.019(R)|      FAST  |clk_BUFGP         |   0.000|
+data<4>     |        10.087(R)|      SLOW  |         4.089(R)|      FAST  |clk_BUFGP         |   0.000|
+data<5>     |        10.085(R)|      SLOW  |         3.964(R)|      FAST  |clk_BUFGP         |   0.000|
+data<6>     |         9.815(R)|      SLOW  |         3.893(R)|      FAST  |clk_BUFGP         |   0.000|
+data<7>     |         9.968(R)|      SLOW  |         3.942(R)|      FAST  |clk_BUFGP         |   0.000|
+lcd_e       |         9.486(R)|      SLOW  |         3.822(R)|      FAST  |clk_BUFGP         |   0.000|
+lcd_rs      |         9.962(R)|      SLOW  |         3.746(R)|      FAST  |clk_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock button
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+button         |         |         |    1.299|    1.299|
+clk            |         |         |    1.448|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+button         |    7.030|   15.347|         |         |
+clk            |    9.763|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+button         |led            |    8.354|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Dec 09 17:47:35 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 259 MB
+
+
+

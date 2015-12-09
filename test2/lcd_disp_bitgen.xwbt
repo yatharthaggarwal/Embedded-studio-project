@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Yatharth\Documents\CIC semesters\Sem 5\Embedded Systems Studio\Project\test2\lcd_disp.ncd
+OUTFILE=C:\Users\Yatharth\Documents\CIC semesters\Sem 5\Embedded Systems Studio\Project\test2\lcd_disp.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=C:\Users\Yatharth\Documents\CIC semesters\Sem 5\Embedded Systems Studio\Project\test2
+LICENSE=WebPack
+USER_INFO=211087818_0_0_837

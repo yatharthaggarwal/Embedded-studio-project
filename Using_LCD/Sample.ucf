@@ -11,3 +11,7 @@ NET "data[4]" LOC = P15;
 NET "data[5]" LOC = P14;
 NET "data[6]" LOC = P12;
 NET "data[7]" LOC = P11;
+
+//NET "button" LOC = P120;
+
+//NET "button" PULLUP;

@@ -15,9 +15,9 @@ port (   clk : in std_logic; ----clock i/p
 end lcd_disp;
 
 architecture Behavioral of lcd_disp is
-	constant N: integer :=22;
+	constant N: integer :=13;
 	type arr is array (1 to N) of std_logic_vector(7 downto 0);
-	constant datas : arr := (X"38",X"0c",X"06",X"01",X"C0",X"50",x"41",x"4e",x"54",x"45",x"43",x"48",x"20",x"53",x"4f",x"4c",x"55", x"54",x"49",x"4f",x"4e",X"53"); --command and data to display
+	constant datas : arr := (X"38",X"0c",X"06",X"01",X"C0",x"30",x"31",x"54",x"4e",x"43",x"53",x"49",x"4f"); --command and data to display
 	begin
 		lcd_rw <= '0'; ----lcd write
 		process(clk)
@@ -41,7 +41,7 @@ architecture Behavioral of lcd_disp is
 			elsif j > 5 then
 				lcd_rs <= '1'; ----data signal
 			end if;
-			if j = 22 then ---repeated display of data
+			if j = 14 then ---repeated display of data
 				j := 5;
 			end if;
 		end if;

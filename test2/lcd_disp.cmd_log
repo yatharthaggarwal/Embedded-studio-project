@@ -1,0 +1,72 @@
+xst -intstyle ise -ifn "C:/Users/Yatharth/Documents/CIC semesters/Sem 5/Embedded Systems Studio/Project/test2/lcd_disp.xst" -ofn "C:/Users/Yatharth/Documents/CIC semesters/Sem 5/Embedded Systems Studio/Project/test2/lcd_disp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc he.ucf -p xc6slx9-tqg144-2 "lcd_disp.ngc" lcd_disp.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_disp_map.ncd lcd_disp.ngd lcd_disp.pcf 
+par -w -intstyle ise -ol high -mt off lcd_disp_map.ncd lcd_disp.ncd lcd_disp.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml lcd_disp.twx lcd_disp.ncd -o lcd_disp.twr lcd_disp.pcf -ucf he.ucf 
+bitgen -intstyle ise -f lcd_disp.ut lcd_disp.ncd 
+bitgen -intstyle ise -f lcd_disp.ut lcd_disp.ncd 
+xst -intstyle ise -ifn "C:/Users/Yatharth/Documents/CIC semesters/Sem 5/Embedded Systems Studio/Project/test2/lcd_disp.xst" -ofn "C:/Users/Yatharth/Documents/CIC semesters/Sem 5/Embedded Systems Studio/Project/test2/lcd_disp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc he.ucf -p xc6slx9-tqg144-2 "lcd_disp.ngc" lcd_disp.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_disp_map.ncd lcd_disp.ngd lcd_disp.pcf 
+par -w -intstyle ise -ol high -mt off lcd_disp_map.ncd lcd_disp.ncd lcd_disp.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml lcd_disp.twx lcd_disp.ncd -o lcd_disp.twr lcd_disp.pcf -ucf he.ucf 
+bitgen -intstyle ise -f lcd_disp.ut lcd_disp.ncd 
+xst -intstyle ise -ifn "C:/Users/Yatharth/Documents/CIC semesters/Sem 5/Embedded Systems Studio/Project/test2/lcd_disp.xst" -ofn "C:/Users/Yatharth/Documents/CIC semesters/Sem 5/Embedded Systems Studio/Project/test2/lcd_disp.syr" 
+xst -intstyle ise -ifn "C:/Users/Yatharth/Documents/CIC semesters/Sem 5/Embedded Systems Studio/Project/test2/lcd_disp.xst" -ofn "C:/Users/Yatharth/Documents/CIC semesters/Sem 5/Embedded Systems Studio/Project/test2/lcd_disp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc he.ucf -p xc6slx9-tqg144-2 "lcd_disp.ngc" lcd_disp.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_disp_map.ncd lcd_disp.ngd lcd_disp.pcf 
+par -w -intstyle ise -ol high -mt off lcd_disp_map.ncd lcd_disp.ncd lcd_disp.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml lcd_disp.twx lcd_disp.ncd -o lcd_disp.twr lcd_disp.pcf -ucf he.ucf 
+bitgen -intstyle ise -f lcd_disp.ut lcd_disp.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc he.ucf -p xc6slx9-tqg144-2 "lcd_disp.ngc" lcd_disp.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_disp_map.ncd lcd_disp.ngd lcd_disp.pcf 
+par -w -intstyle ise -ol high -mt off lcd_disp_map.ncd lcd_disp.ncd lcd_disp.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml lcd_disp.twx lcd_disp.ncd -o lcd_disp.twr lcd_disp.pcf -ucf he.ucf 
+bitgen -intstyle ise -f lcd_disp.ut lcd_disp.ncd 
+xst -intstyle ise -ifn "C:/Users/Yatharth/Documents/CIC semesters/Sem 5/Embedded Systems Studio/Project/test2/lcd_disp.xst" -ofn "C:/Users/Yatharth/Documents/CIC semesters/Sem 5/Embedded Systems Studio/Project/test2/lcd_disp.syr" 
+xst -intstyle ise -ifn "C:/Users/Yatharth/Documents/CIC semesters/Sem 5/Embedded Systems Studio/Project/test2/lcd_disp.xst" -ofn "C:/Users/Yatharth/Documents/CIC semesters/Sem 5/Embedded Systems Studio/Project/test2/lcd_disp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc he.ucf -p xc6slx9-tqg144-2 "lcd_disp.ngc" lcd_disp.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_disp_map.ncd lcd_disp.ngd lcd_disp.pcf 
+par -w -intstyle ise -ol high -mt off lcd_disp_map.ncd lcd_disp.ncd lcd_disp.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml lcd_disp.twx lcd_disp.ncd -o lcd_disp.twr lcd_disp.pcf -ucf he.ucf 
+bitgen -intstyle ise -f lcd_disp.ut lcd_disp.ncd 
+xst -intstyle ise -ifn "C:/Users/Yatharth/Documents/CIC semesters/Sem 5/Embedded Systems Studio/Project/test2/lcd_disp.xst" -ofn "C:/Users/Yatharth/Documents/CIC semesters/Sem 5/Embedded Systems Studio/Project/test2/lcd_disp.syr" 
+xst -intstyle ise -ifn "C:/Users/Yatharth/Documents/CIC semesters/Sem 5/Embedded Systems Studio/Project/test2/lcd_disp.xst" -ofn "C:/Users/Yatharth/Documents/CIC semesters/Sem 5/Embedded Systems Studio/Project/test2/lcd_disp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc he.ucf -p xc6slx9-tqg144-2 "lcd_disp.ngc" lcd_disp.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_disp_map.ncd lcd_disp.ngd lcd_disp.pcf 
+par -w -intstyle ise -ol high -mt off lcd_disp_map.ncd lcd_disp.ncd lcd_disp.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml lcd_disp.twx lcd_disp.ncd -o lcd_disp.twr lcd_disp.pcf -ucf he.ucf 
+bitgen -intstyle ise -f lcd_disp.ut lcd_disp.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc he.ucf -p xc6slx9-tqg144-2 "lcd_disp.ngc" lcd_disp.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_disp_map.ncd lcd_disp.ngd lcd_disp.pcf 
+par -w -intstyle ise -ol high -mt off lcd_disp_map.ncd lcd_disp.ncd lcd_disp.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml lcd_disp.twx lcd_disp.ncd -o lcd_disp.twr lcd_disp.pcf -ucf he.ucf 
+bitgen -intstyle ise -f lcd_disp.ut lcd_disp.ncd 
+xst -intstyle ise -ifn "C:/Users/Yatharth/Documents/CIC semesters/Sem 5/Embedded Systems Studio/Project/test2/lcd_disp.xst" -ofn "C:/Users/Yatharth/Documents/CIC semesters/Sem 5/Embedded Systems Studio/Project/test2/lcd_disp.syr" 
+xst -intstyle ise -ifn "C:/Users/Yatharth/Documents/CIC semesters/Sem 5/Embedded Systems Studio/Project/test2/lcd_disp.xst" -ofn "C:/Users/Yatharth/Documents/CIC semesters/Sem 5/Embedded Systems Studio/Project/test2/lcd_disp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc he.ucf -p xc6slx9-tqg144-2 "lcd_disp.ngc" lcd_disp.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_disp_map.ncd lcd_disp.ngd lcd_disp.pcf 
+par -w -intstyle ise -ol high -mt off lcd_disp_map.ncd lcd_disp.ncd lcd_disp.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml lcd_disp.twx lcd_disp.ncd -o lcd_disp.twr lcd_disp.pcf -ucf he.ucf 
+bitgen -intstyle ise -f lcd_disp.ut lcd_disp.ncd 
+xst -intstyle ise -ifn "C:/Users/Yatharth/Documents/CIC semesters/Sem 5/Embedded Systems Studio/Project/test2/lcd_disp.xst" -ofn "C:/Users/Yatharth/Documents/CIC semesters/Sem 5/Embedded Systems Studio/Project/test2/lcd_disp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc he.ucf -p xc6slx9-tqg144-2 "lcd_disp.ngc" lcd_disp.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_disp_map.ncd lcd_disp.ngd lcd_disp.pcf 
+par -w -intstyle ise -ol high -mt off lcd_disp_map.ncd lcd_disp.ncd lcd_disp.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml lcd_disp.twx lcd_disp.ncd -o lcd_disp.twr lcd_disp.pcf -ucf he.ucf 
+bitgen -intstyle ise -f lcd_disp.ut lcd_disp.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc he.ucf -p xc6slx9-tqg144-2 "lcd_disp.ngc" lcd_disp.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_disp_map.ncd lcd_disp.ngd lcd_disp.pcf 
+par -w -intstyle ise -ol high -mt off lcd_disp_map.ncd lcd_disp.ncd lcd_disp.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml lcd_disp.twx lcd_disp.ncd -o lcd_disp.twr lcd_disp.pcf -ucf he.ucf 
+xst -intstyle ise -ifn "C:/Users/Yatharth/Documents/CIC semesters/Sem 5/Embedded Systems Studio/Project/test2/lcd_disp.xst" -ofn "C:/Users/Yatharth/Documents/CIC semesters/Sem 5/Embedded Systems Studio/Project/test2/lcd_disp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc he.ucf -p xc6slx9-tqg144-2 "lcd_disp.ngc" lcd_disp.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_disp_map.ncd lcd_disp.ngd lcd_disp.pcf 
+par -w -intstyle ise -ol high -mt off lcd_disp_map.ncd lcd_disp.ncd lcd_disp.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml lcd_disp.twx lcd_disp.ncd -o lcd_disp.twr lcd_disp.pcf -ucf he.ucf 
+bitgen -intstyle ise -f lcd_disp.ut lcd_disp.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc he.ucf -p xc6slx9-tqg144-2 "lcd_disp.ngc" lcd_disp.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lcd_disp_map.ncd lcd_disp.ngd lcd_disp.pcf 
+par -w -intstyle ise -ol high -mt off lcd_disp_map.ncd lcd_disp.ncd lcd_disp.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml lcd_disp.twx lcd_disp.ncd -o lcd_disp.twr lcd_disp.pcf -ucf he.ucf 
+bitgen -intstyle ise -f lcd_disp.ut lcd_disp.ncd 

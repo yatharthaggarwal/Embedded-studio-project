@@ -1,0 +1,3040 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.25 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.26 secs
+ 
+--> Reading design: lcd_disp.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "lcd_disp.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "lcd_disp"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : lcd_disp
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Yatharth\Documents\CIC semesters\Sem 5\Embedded Systems Studio\Project\test2\lets.vhd" into library work
+Parsing entity <lcd_disp>.
+Parsing architecture <Behavioral> of entity <lcd_disp>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <lcd_disp> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\Yatharth\Documents\CIC semesters\Sem 5\Embedded Systems Studio\Project\test2\lets.vhd" Line 30: button should be on the sensitivity list of the process
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <lcd_disp>.
+    Related source file is "C:\Users\Yatharth\Documents\CIC semesters\Sem 5\Embedded Systems Studio\Project\test2\lets.vhd".
+    Found 1-bit register for signal <lcd_e_clk_DFF_33_q>.
+    Found 8-bit register for signal <data[7]_dff_20_OUT>.
+    Found 32-bit register for signal <j[31]_dff_21_OUT>.
+    Found 1-bit register for signal <lcd_rs_clk_DFF_42_q>.
+    Found 32-bit register for signal <i[31]_dff_19_OUT>.
+    Found 1-bit register for signal <lcd_e>.
+    Found 1-bit register for signal <lcd_rs>.
+    Found 1-bit register for signal <i<31>>.
+    Found 1-bit register for signal <i<30>>.
+    Found 1-bit register for signal <i<29>>.
+    Found 1-bit register for signal <i<28>>.
+    Found 1-bit register for signal <i<27>>.
+    Found 1-bit register for signal <i<26>>.
+    Found 1-bit register for signal <i<25>>.
+    Found 1-bit register for signal <i<24>>.
+    Found 1-bit register for signal <i<23>>.
+    Found 1-bit register for signal <i<22>>.
+    Found 1-bit register for signal <i<21>>.
+    Found 1-bit register for signal <i<20>>.
+    Found 1-bit register for signal <i<19>>.
+    Found 1-bit register for signal <i<18>>.
+    Found 1-bit register for signal <i<17>>.
+    Found 1-bit register for signal <i<16>>.
+    Found 1-bit register for signal <i<15>>.
+    Found 1-bit register for signal <i<14>>.
+    Found 1-bit register for signal <i<13>>.
+    Found 1-bit register for signal <i<12>>.
+    Found 1-bit register for signal <i<11>>.
+    Found 1-bit register for signal <i<10>>.
+    Found 1-bit register for signal <i<9>>.
+    Found 1-bit register for signal <i<8>>.
+    Found 1-bit register for signal <i<7>>.
+    Found 1-bit register for signal <i<6>>.
+    Found 1-bit register for signal <i<5>>.
+    Found 1-bit register for signal <i<4>>.
+    Found 1-bit register for signal <i<3>>.
+    Found 1-bit register for signal <i<2>>.
+    Found 1-bit register for signal <i<1>>.
+    Found 1-bit register for signal <i<0>>.
+    Found 1-bit register for signal <data<7>>.
+    Found 1-bit register for signal <data<6>>.
+    Found 1-bit register for signal <data<5>>.
+    Found 1-bit register for signal <data<4>>.
+    Found 1-bit register for signal <data<3>>.
+    Found 1-bit register for signal <data<2>>.
+    Found 1-bit register for signal <data<1>>.
+    Found 1-bit register for signal <data<0>>.
+    Found 1-bit register for signal <j<31>>.
+    Found 1-bit register for signal <j<30>>.
+    Found 1-bit register for signal <j<29>>.
+    Found 1-bit register for signal <j<28>>.
+    Found 1-bit register for signal <j<27>>.
+    Found 1-bit register for signal <j<26>>.
+    Found 1-bit register for signal <j<25>>.
+    Found 1-bit register for signal <j<24>>.
+    Found 1-bit register for signal <j<23>>.
+    Found 1-bit register for signal <j<22>>.
+    Found 1-bit register for signal <j<21>>.
+    Found 1-bit register for signal <j<20>>.
+    Found 1-bit register for signal <j<19>>.
+    Found 1-bit register for signal <j<18>>.
+    Found 1-bit register for signal <j<17>>.
+    Found 1-bit register for signal <j<16>>.
+    Found 1-bit register for signal <j<15>>.
+    Found 1-bit register for signal <j<14>>.
+    Found 1-bit register for signal <j<13>>.
+    Found 1-bit register for signal <j<12>>.
+    Found 1-bit register for signal <j<11>>.
+    Found 1-bit register for signal <j<10>>.
+    Found 1-bit register for signal <j<9>>.
+    Found 1-bit register for signal <j<8>>.
+    Found 1-bit register for signal <j<7>>.
+    Found 1-bit register for signal <j<6>>.
+    Found 1-bit register for signal <j<5>>.
+    Found 1-bit register for signal <j<4>>.
+    Found 1-bit register for signal <j<3>>.
+    Found 1-bit register for signal <j<2>>.
+    Found 1-bit register for signal <j<1>>.
+    Found 1-bit register for signal <j<0>>.
+    Found 32-bit adder for signal <i[31]_GND_5_o_add_5_OUT> created at line 39.
+    Found 32-bit adder for signal <j[31]_GND_5_o_add_29_OUT> created at line 70.
+    Found 16x16-bit Read Only RAM for signal <_n0319>
+    Found 32-bit comparator greater for signal <n0014> created at line 62
+    Found 32-bit comparator greater for signal <GND_5_o_i[31]_LessThan_27_o> created at line 66
+    Found 32-bit comparator greater for signal <n0028> created at line 74
+    Summary:
+	inferred   1 RAM(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred 148 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred  13 Multiplexer(s).
+Unit <lcd_disp> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x16-bit single-port Read Only RAM                   : 1
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 2
+# Registers                                            : 79
+ 1-bit register                                        : 76
+ 32-bit register                                       : 2
+ 8-bit register                                        : 1
+# Comparators                                          : 3
+ 32-bit comparator greater                             : 3
+# Multiplexers                                         : 13
+ 1-bit 2-to-1 multiplexer                              : 4
+ 32-bit 2-to-1 multiplexer                             : 7
+ 8-bit 2-to-1 multiplexer                              : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <lcd_disp>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0319> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 16-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <j<3:0>>        |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <lcd_disp> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x16-bit single-port distributed Read Only RAM       : 1
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 2
+# Registers                                            : 148
+ Flip-Flops                                            : 148
+# Comparators                                          : 3
+ 32-bit comparator greater                             : 3
+# Multiplexers                                         : 13
+ 1-bit 2-to-1 multiplexer                              : 4
+ 32-bit 2-to-1 multiplexer                             : 7
+ 8-bit 2-to-1 multiplexer                              : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
+   incompatible with the Spartan6 architecture. The two primary causes of this is
+   either a register or latch described with both an asynchronous set and
+   asynchronous reset, or a register or latch described with an asynchronous
+   set or reset which however has an initialization value of the opposite 
+   polarity (i.e. asynchronous reset with an initialization value of 1).
+    While this circuit can be built, it creates a sub-optimal implementation
+   in terms of area, power and performance. For a more optimal implementation
+   Xilinx highly recommends one of the following:
+
+          1) Remove either the set or reset from all registers and latches
+             if not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Ensure all registers have the same initialization value as the
+             described asynchronous set or reset polarity
+          4) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    data_0 in unit <lcd_disp>
+    j_0 in unit <lcd_disp>
+    j_1 in unit <lcd_disp>
+    j_3 in unit <lcd_disp>
+    j_4 in unit <lcd_disp>
+    j_2 in unit <lcd_disp>
+    j_6 in unit <lcd_disp>
+    j_7 in unit <lcd_disp>
+    j_5 in unit <lcd_disp>
+    j_9 in unit <lcd_disp>
+    j_10 in unit <lcd_disp>
+    j_8 in unit <lcd_disp>
+    j_12 in unit <lcd_disp>
+    j_13 in unit <lcd_disp>
+    j_11 in unit <lcd_disp>
+    j_15 in unit <lcd_disp>
+    j_16 in unit <lcd_disp>
+    j_14 in unit <lcd_disp>
+    j_18 in unit <lcd_disp>
+    j_19 in unit <lcd_disp>
+    j_17 in unit <lcd_disp>
+    j_21 in unit <lcd_disp>
+    j_22 in unit <lcd_disp>
+    j_20 in unit <lcd_disp>
+    j_24 in unit <lcd_disp>
+    j_25 in unit <lcd_disp>
+    j_23 in unit <lcd_disp>
+    j_26 in unit <lcd_disp>
+    j_27 in unit <lcd_disp>
+    j_28 in unit <lcd_disp>
+    j_29 in unit <lcd_disp>
+    j_31 in unit <lcd_disp>
+    j_30 in unit <lcd_disp>
+    data_2 in unit <lcd_disp>
+    data_3 in unit <lcd_disp>
+    data_1 in unit <lcd_disp>
+    data_5 in unit <lcd_disp>
+    data_6 in unit <lcd_disp>
+    data_4 in unit <lcd_disp>
+    i_0 in unit <lcd_disp>
+    i_1 in unit <lcd_disp>
+    data_7 in unit <lcd_disp>
+    i_3 in unit <lcd_disp>
+    i_4 in unit <lcd_disp>
+    i_2 in unit <lcd_disp>
+    i_6 in unit <lcd_disp>
+    i_7 in unit <lcd_disp>
+    i_5 in unit <lcd_disp>
+    i_9 in unit <lcd_disp>
+    i_10 in unit <lcd_disp>
+    i_8 in unit <lcd_disp>
+    i_12 in unit <lcd_disp>
+    i_13 in unit <lcd_disp>
+    i_11 in unit <lcd_disp>
+    i_15 in unit <lcd_disp>
+    i_16 in unit <lcd_disp>
+    i_14 in unit <lcd_disp>
+    i_18 in unit <lcd_disp>
+    i_19 in unit <lcd_disp>
+    i_17 in unit <lcd_disp>
+    i_21 in unit <lcd_disp>
+    i_22 in unit <lcd_disp>
+    i_20 in unit <lcd_disp>
+    i_24 in unit <lcd_disp>
+    i_25 in unit <lcd_disp>
+    i_23 in unit <lcd_disp>
+    i_27 in unit <lcd_disp>
+    i_28 in unit <lcd_disp>
+    i_26 in unit <lcd_disp>
+    i_30 in unit <lcd_disp>
+    i_31 in unit <lcd_disp>
+    i_29 in unit <lcd_disp>
+    lcd_e in unit <lcd_disp>
+    lcd_rs in unit <lcd_disp>
+
+
+Optimizing unit <lcd_disp> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block lcd_disp, actual ratio is 7.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 222
+ Flip-Flops                                            : 222
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : lcd_disp.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 574
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 63
+#      LUT2                        : 148
+#      LUT3                        : 76
+#      LUT4                        : 7
+#      LUT5                        : 71
+#      LUT6                        : 59
+#      MUXCY                       : 82
+#      MUXF7                       : 1
+#      VCC                         : 1
+#      XORCY                       : 64
+# FlipFlops/Latches                : 296
+#      FD                          : 74
+#      FDC                         : 74
+#      FDP                         : 74
+#      LDC                         : 73
+#      LDP                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 13
+#      IBUF                        : 1
+#      OBUF                        : 12
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             296  out of  11440     2%  
+ Number of Slice LUTs:                  425  out of   5720     7%  
+    Number used as Logic:               425  out of   5720     7%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    612
+   Number with an unused Flip Flop:     316  out of    612    51%  
+   Number with an unused LUT:           187  out of    612    30%  
+   Number of fully used LUT-FF pairs:   109  out of    612    17%  
+   Number of unique control sets:       223
+
+IO Utilization: 
+ Number of IOs:                          14
+ Number of bonded IOBs:                  14  out of    102    13%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------------------+------------------------+-------+
+Clock Signal                                       | Clock buffer(FF name)  | Load  |
+---------------------------------------------------+------------------------+-------+
+clk                                                | BUFGP                  | 222   |
+button_lcd_rs_AND_149_o(button_lcd_rs_AND_149_o1:O)| NONE(*)(lcd_rs_LDC)    | 1     |
+button_lcd_e_AND_67_o(button_lcd_e_AND_67_o1:O)    | NONE(*)(lcd_e_LDC)     | 1     |
+button_i[31]_AND_7_o(button_i[31]_AND_7_o1:O)      | NONE(*)(i_29_LDC)      | 1     |
+button_i[31]_AND_3_o(button_i[31]_AND_3_o1:O)      | NONE(*)(i_31_LDC)      | 1     |
+button_i[31]_AND_5_o(button_i[31]_AND_5_o1:O)      | NONE(*)(i_30_LDC)      | 1     |
+button_i[31]_AND_13_o(button_i[31]_AND_13_o1:O)    | NONE(*)(i_26_LDC)      | 1     |
+button_i[31]_AND_9_o(button_i[31]_AND_9_o1:O)      | NONE(*)(i_28_LDC)      | 1     |
+button_i[31]_AND_11_o(button_i[31]_AND_11_o1:O)    | NONE(*)(i_27_LDC)      | 1     |
+button_i[31]_AND_19_o(button_i[31]_AND_19_o1:O)    | NONE(*)(i_23_LDC)      | 1     |
+button_i[31]_AND_15_o(button_i[31]_AND_15_o1:O)    | NONE(*)(i_25_LDC)      | 1     |
+button_i[31]_AND_17_o(button_i[31]_AND_17_o1:O)    | NONE(*)(i_24_LDC)      | 1     |
+button_i[31]_AND_25_o(button_i[31]_AND_25_o1:O)    | NONE(*)(i_20_LDC)      | 1     |
+button_i[31]_AND_21_o(button_i[31]_AND_21_o1:O)    | NONE(*)(i_22_LDC)      | 1     |
+button_i[31]_AND_23_o(button_i[31]_AND_23_o1:O)    | NONE(*)(i_21_LDC)      | 1     |
+button_i[31]_AND_31_o(button_i[31]_AND_31_o1:O)    | NONE(*)(i_17_LDC)      | 1     |
+button_i[31]_AND_27_o(button_i[31]_AND_27_o1:O)    | NONE(*)(i_19_LDC)      | 1     |
+button_i[31]_AND_29_o(button_i[31]_AND_29_o1:O)    | NONE(*)(i_18_LDC)      | 1     |
+button_i[31]_AND_37_o(button_i[31]_AND_37_o1:O)    | NONE(*)(i_14_LDC)      | 1     |
+button_i[31]_AND_33_o(button_i[31]_AND_33_o1:O)    | NONE(*)(i_16_LDC)      | 1     |
+button_i[31]_AND_35_o(button_i[31]_AND_35_o1:O)    | NONE(*)(i_15_LDC)      | 1     |
+button_i[31]_AND_43_o(button_i[31]_AND_43_o1:O)    | NONE(*)(i_11_LDC)      | 1     |
+button_i[31]_AND_39_o(button_i[31]_AND_39_o1:O)    | NONE(*)(i_13_LDC)      | 1     |
+button_i[31]_AND_41_o(button_i[31]_AND_41_o1:O)    | NONE(*)(i_12_LDC)      | 1     |
+button_i[31]_AND_49_o(button_i[31]_AND_49_o1:O)    | NONE(*)(i_8_LDC)       | 1     |
+button_i[31]_AND_45_o(button_i[31]_AND_45_o1:O)    | NONE(*)(i_10_LDC)      | 1     |
+button_i[31]_AND_47_o(button_i[31]_AND_47_o1:O)    | NONE(*)(i_9_LDC)       | 1     |
+button_i[31]_AND_55_o(button_i[31]_AND_55_o1:O)    | NONE(*)(i_5_LDC)       | 1     |
+button_i[31]_AND_51_o(button_i[31]_AND_51_o1:O)    | NONE(*)(i_7_LDC)       | 1     |
+button_i[31]_AND_53_o(button_i[31]_AND_53_o1:O)    | NONE(*)(i_6_LDC)       | 1     |
+button_i[31]_AND_61_o(button_i[31]_AND_61_o1:O)    | NONE(*)(i_2_LDC)       | 1     |
+button_i[31]_AND_57_o(button_i[31]_AND_57_o1:O)    | NONE(*)(i_4_LDC)       | 1     |
+button_i[31]_AND_59_o(button_i[31]_AND_59_o1:O)    | NONE(*)(i_3_LDC)       | 1     |
+button_data[7]_AND_69_o(button_data[7]_AND_69_o1:O)| NONE(*)(data_7_LDC)    | 1     |
+button_i[31]_AND_63_o(button_i[31]_AND_63_o1:O)    | NONE(*)(i_1_LDC)       | 1     |
+button_i[31]_AND_65_o(button_i[31]_AND_65_o1:O)    | NONE(*)(i_0_LDC)       | 1     |
+button_data[7]_AND_75_o(button_data[7]_AND_75_o1:O)| NONE(*)(data_4_LDC)    | 1     |
+button_data[7]_AND_71_o(button_data[7]_AND_71_o1:O)| NONE(*)(data_6_LDC)    | 1     |
+button_data[7]_AND_73_o(button_data[7]_AND_73_o1:O)| NONE(*)(data_5_LDC)    | 1     |
+button_data[7]_AND_81_o(button_data[7]_AND_81_o1:O)| NONE(*)(data_1_LDC)    | 1     |
+button_data[7]_AND_77_o(button_data[7]_AND_77_o1:O)| NONE(*)(data_3_LDC)    | 1     |
+button_data[7]_AND_79_o(button_data[7]_AND_79_o1:O)| NONE(*)(data_2_LDC)    | 1     |
+button_j[31]_AND_87_o(button_j[31]_AND_87_o1:O)    | NONE(*)(j_30_LDC)      | 1     |
+button_j[31]_AND_85_o(button_j[31]_AND_85_o1:O)    | NONE(*)(j_31_LDC)      | 1     |
+button_j[31]_AND_89_o(button_j[31]_AND_89_o1:O)    | NONE(*)(j_29_LDC)      | 1     |
+button_j[31]_AND_91_o(button_j[31]_AND_91_o1:O)    | NONE(*)(j_28_LDC)      | 1     |
+button_j[31]_AND_93_o(button_j[31]_AND_93_o1:O)    | NONE(*)(j_27_LDC)      | 1     |
+button_j[31]_AND_95_o(button_j[31]_AND_95_o1:O)    | NONE(*)(j_26_LDC)      | 1     |
+button_j[31]_AND_101_o(button_j[31]_AND_101_o1:O)  | NONE(*)(j_23_LDC)      | 1     |
+button_j[31]_AND_97_o(button_j[31]_AND_97_o1:O)    | NONE(*)(j_25_LDC)      | 1     |
+button_j[31]_AND_99_o(button_j[31]_AND_99_o1:O)    | NONE(*)(j_24_LDC)      | 1     |
+button_j[31]_AND_107_o(button_j[31]_AND_107_o1:O)  | NONE(*)(j_20_LDC)      | 1     |
+button_j[31]_AND_103_o(button_j[31]_AND_103_o1:O)  | NONE(*)(j_22_LDC)      | 1     |
+button_j[31]_AND_105_o(button_j[31]_AND_105_o1:O)  | NONE(*)(j_21_LDC)      | 1     |
+button_j[31]_AND_113_o(button_j[31]_AND_113_o1:O)  | NONE(*)(j_17_LDC)      | 1     |
+button_j[31]_AND_109_o(button_j[31]_AND_109_o1:O)  | NONE(*)(j_19_LDC)      | 1     |
+button_j[31]_AND_111_o(button_j[31]_AND_111_o1:O)  | NONE(*)(j_18_LDC)      | 1     |
+button_j[31]_AND_119_o(button_j[31]_AND_119_o1:O)  | NONE(*)(j_14_LDC)      | 1     |
+button_j[31]_AND_115_o(button_j[31]_AND_115_o1:O)  | NONE(*)(j_16_LDC)      | 1     |
+button_j[31]_AND_117_o(button_j[31]_AND_117_o1:O)  | NONE(*)(j_15_LDC)      | 1     |
+button_j[31]_AND_125_o(button_j[31]_AND_125_o1:O)  | NONE(*)(j_11_LDC)      | 1     |
+button_j[31]_AND_121_o(button_j[31]_AND_121_o1:O)  | NONE(*)(j_13_LDC)      | 1     |
+button_j[31]_AND_123_o(button_j[31]_AND_123_o1:O)  | NONE(*)(j_12_LDC)      | 1     |
+button_j[31]_AND_131_o(button_j[31]_AND_131_o1:O)  | NONE(*)(j_8_LDC)       | 1     |
+button_j[31]_AND_127_o(button_j[31]_AND_127_o1:O)  | NONE(*)(j_10_LDC)      | 1     |
+button_j[31]_AND_129_o(button_j[31]_AND_129_o1:O)  | NONE(*)(j_9_LDC)       | 1     |
+button_j[31]_AND_137_o(button_j[31]_AND_137_o1:O)  | NONE(*)(j_5_LDC)       | 1     |
+button_j[31]_AND_133_o(button_j[31]_AND_133_o1:O)  | NONE(*)(j_7_LDC)       | 1     |
+button_j[31]_AND_135_o(button_j[31]_AND_135_o1:O)  | NONE(*)(j_6_LDC)       | 1     |
+button_j[31]_AND_143_o(button_j[31]_AND_143_o1:O)  | NONE(*)(j_2_LDC)       | 1     |
+button_j[31]_AND_139_o(button_j[31]_AND_139_o1:O)  | NONE(*)(j_4_LDC)       | 1     |
+button_j[31]_AND_141_o(button_j[31]_AND_141_o1:O)  | NONE(*)(j_3_LDC)       | 1     |
+button_j[31]_AND_145_o(button_j[31]_AND_145_o1:O)  | NONE(*)(j_1_LDC)       | 1     |
+button_j[31]_AND_148_o(button_j[31]_AND_148_o1:O)  | NONE(*)(j_0_LDC1)      | 1     |
+button_data[7]_AND_83_o(button_data[7]_AND_83_o1:O)| NONE(*)(data_0_LDC)    | 1     |
+---------------------------------------------------+------------------------+-------+
+(*) These 74 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 8.894ns (Maximum Frequency: 112.435MHz)
+   Minimum input arrival time before clock: 5.230ns
+   Maximum output required time after clock: 5.403ns
+   Maximum combinational path delay: 6.599ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 8.894ns (frequency: 112.435MHz)
+  Total number of paths / destination ports: 128572 / 370
+-------------------------------------------------------------------------
+Delay:               8.894ns (Levels of Logic = 6)
+  Source:            i_1_C_1 (FF)
+  Destination:       _i000048_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: i_1_C_1 to _i000048_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.525   0.834  i_1_C_1 (i_1_C_1)
+     LUT3:I1->O            3   0.250   1.221  i_11 (i_1)
+     LUT6:I0->O            3   0.254   1.196  GND_5_o_i[31]_equal_29_o<31>1 (GND_5_o_i[31]_equal_29_o<31>)
+     LUT6:I1->O           12   0.254   1.297  GND_5_o_i[31]_equal_29_o<31>7_1 (GND_5_o_i[31]_equal_29_o<31>7)
+     LUT5:I2->O            5   0.235   1.271  Mmux_j[31]_j[31]_mux_36_OUT191 (j[31]_j[31]_mux_36_OUT<26>)
+     LUT6:I1->O            3   0.254   0.994  GND_5_o_j[31]_equal_18_o<31>3 (GND_5_o_j[31]_equal_18_o<31>2)
+     LUT6:I3->O            3   0.235   0.000  Mmux_j[31]_GND_5_o_mux_18_OUT261 (j[31]_GND_5_o_mux_18_OUT<3>)
+     FD:D                      0.074          _i000048_3
+    ----------------------------------------
+    Total                      8.894ns (2.081ns logic, 6.813ns route)
+                                       (23.4% logic, 76.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_lcd_rs_AND_149_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       lcd_rs_LDC (LATCH)
+  Destination Clock: button_lcd_rs_AND_149_o falling
+
+  Data Path: button to lcd_rs_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_lcd_rs_AND_150_o1 (button_lcd_rs_AND_150_o)
+     LDC:CLR                   0.459          lcd_rs_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 148 / 148
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       lcd_rs_C (FF)
+  Destination Clock: clk rising
+
+  Data Path: button to lcd_rs_C
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_i[31]_AND_3_o1 (button_i[31]_AND_3_o)
+     FDP:PRE                   0.459          i_31_P_31
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_lcd_e_AND_67_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       lcd_e_LDC (LATCH)
+  Destination Clock: button_lcd_e_AND_67_o falling
+
+  Data Path: button to lcd_e_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_lcd_e_AND_68_o1 (button_lcd_e_AND_68_o)
+     LDC:CLR                   0.459          lcd_e_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_i[31]_AND_7_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       i_29_LDC (LATCH)
+  Destination Clock: button_i[31]_AND_7_o falling
+
+  Data Path: button to i_29_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_i[31]_AND_8_o1 (button_i[31]_AND_8_o)
+     LDC:CLR                   0.459          i_29_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_i[31]_AND_3_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       i_31_LDC (LATCH)
+  Destination Clock: button_i[31]_AND_3_o falling
+
+  Data Path: button to i_31_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_i[31]_AND_4_o1 (button_i[31]_AND_4_o)
+     LDC:CLR                   0.459          i_31_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_i[31]_AND_5_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       i_30_LDC (LATCH)
+  Destination Clock: button_i[31]_AND_5_o falling
+
+  Data Path: button to i_30_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_i[31]_AND_6_o1 (button_i[31]_AND_6_o)
+     LDC:CLR                   0.459          i_30_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_i[31]_AND_13_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       i_26_LDC (LATCH)
+  Destination Clock: button_i[31]_AND_13_o falling
+
+  Data Path: button to i_26_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_i[31]_AND_14_o1 (button_i[31]_AND_14_o)
+     LDC:CLR                   0.459          i_26_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_i[31]_AND_9_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       i_28_LDC (LATCH)
+  Destination Clock: button_i[31]_AND_9_o falling
+
+  Data Path: button to i_28_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_i[31]_AND_10_o1 (button_i[31]_AND_10_o)
+     LDC:CLR                   0.459          i_28_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_i[31]_AND_11_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       i_27_LDC (LATCH)
+  Destination Clock: button_i[31]_AND_11_o falling
+
+  Data Path: button to i_27_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_i[31]_AND_12_o1 (button_i[31]_AND_12_o)
+     LDC:CLR                   0.459          i_27_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_i[31]_AND_19_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       i_23_LDC (LATCH)
+  Destination Clock: button_i[31]_AND_19_o falling
+
+  Data Path: button to i_23_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_i[31]_AND_20_o1 (button_i[31]_AND_20_o)
+     LDC:CLR                   0.459          i_23_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_i[31]_AND_15_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       i_25_LDC (LATCH)
+  Destination Clock: button_i[31]_AND_15_o falling
+
+  Data Path: button to i_25_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_i[31]_AND_16_o1 (button_i[31]_AND_16_o)
+     LDC:CLR                   0.459          i_25_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_i[31]_AND_17_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       i_24_LDC (LATCH)
+  Destination Clock: button_i[31]_AND_17_o falling
+
+  Data Path: button to i_24_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_i[31]_AND_18_o1 (button_i[31]_AND_18_o)
+     LDC:CLR                   0.459          i_24_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_i[31]_AND_25_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       i_20_LDC (LATCH)
+  Destination Clock: button_i[31]_AND_25_o falling
+
+  Data Path: button to i_20_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_i[31]_AND_26_o1 (button_i[31]_AND_26_o)
+     LDC:CLR                   0.459          i_20_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_i[31]_AND_21_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       i_22_LDC (LATCH)
+  Destination Clock: button_i[31]_AND_21_o falling
+
+  Data Path: button to i_22_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_i[31]_AND_22_o1 (button_i[31]_AND_22_o)
+     LDC:CLR                   0.459          i_22_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_i[31]_AND_23_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       i_21_LDC (LATCH)
+  Destination Clock: button_i[31]_AND_23_o falling
+
+  Data Path: button to i_21_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_i[31]_AND_24_o1 (button_i[31]_AND_24_o)
+     LDC:CLR                   0.459          i_21_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_i[31]_AND_31_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       i_17_LDC (LATCH)
+  Destination Clock: button_i[31]_AND_31_o falling
+
+  Data Path: button to i_17_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_i[31]_AND_32_o1 (button_i[31]_AND_32_o)
+     LDC:CLR                   0.459          i_17_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_i[31]_AND_27_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       i_19_LDC (LATCH)
+  Destination Clock: button_i[31]_AND_27_o falling
+
+  Data Path: button to i_19_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_i[31]_AND_28_o1 (button_i[31]_AND_28_o)
+     LDC:CLR                   0.459          i_19_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_i[31]_AND_29_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       i_18_LDC (LATCH)
+  Destination Clock: button_i[31]_AND_29_o falling
+
+  Data Path: button to i_18_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_i[31]_AND_30_o1 (button_i[31]_AND_30_o)
+     LDC:CLR                   0.459          i_18_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_i[31]_AND_37_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       i_14_LDC (LATCH)
+  Destination Clock: button_i[31]_AND_37_o falling
+
+  Data Path: button to i_14_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_i[31]_AND_38_o1 (button_i[31]_AND_38_o)
+     LDC:CLR                   0.459          i_14_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_i[31]_AND_33_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       i_16_LDC (LATCH)
+  Destination Clock: button_i[31]_AND_33_o falling
+
+  Data Path: button to i_16_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_i[31]_AND_34_o1 (button_i[31]_AND_34_o)
+     LDC:CLR                   0.459          i_16_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_i[31]_AND_35_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       i_15_LDC (LATCH)
+  Destination Clock: button_i[31]_AND_35_o falling
+
+  Data Path: button to i_15_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_i[31]_AND_36_o1 (button_i[31]_AND_36_o)
+     LDC:CLR                   0.459          i_15_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_i[31]_AND_43_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       i_11_LDC (LATCH)
+  Destination Clock: button_i[31]_AND_43_o falling
+
+  Data Path: button to i_11_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_i[31]_AND_44_o1 (button_i[31]_AND_44_o)
+     LDC:CLR                   0.459          i_11_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_i[31]_AND_39_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       i_13_LDC (LATCH)
+  Destination Clock: button_i[31]_AND_39_o falling
+
+  Data Path: button to i_13_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_i[31]_AND_40_o1 (button_i[31]_AND_40_o)
+     LDC:CLR                   0.459          i_13_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_i[31]_AND_41_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       i_12_LDC (LATCH)
+  Destination Clock: button_i[31]_AND_41_o falling
+
+  Data Path: button to i_12_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_i[31]_AND_42_o1 (button_i[31]_AND_42_o)
+     LDC:CLR                   0.459          i_12_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_i[31]_AND_49_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       i_8_LDC (LATCH)
+  Destination Clock: button_i[31]_AND_49_o falling
+
+  Data Path: button to i_8_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_i[31]_AND_50_o1 (button_i[31]_AND_50_o)
+     LDC:CLR                   0.459          i_8_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_i[31]_AND_45_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       i_10_LDC (LATCH)
+  Destination Clock: button_i[31]_AND_45_o falling
+
+  Data Path: button to i_10_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_i[31]_AND_46_o1 (button_i[31]_AND_46_o)
+     LDC:CLR                   0.459          i_10_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_i[31]_AND_47_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       i_9_LDC (LATCH)
+  Destination Clock: button_i[31]_AND_47_o falling
+
+  Data Path: button to i_9_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_i[31]_AND_48_o1 (button_i[31]_AND_48_o)
+     LDC:CLR                   0.459          i_9_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_i[31]_AND_55_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       i_5_LDC (LATCH)
+  Destination Clock: button_i[31]_AND_55_o falling
+
+  Data Path: button to i_5_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_i[31]_AND_56_o1 (button_i[31]_AND_56_o)
+     LDC:CLR                   0.459          i_5_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_i[31]_AND_51_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       i_7_LDC (LATCH)
+  Destination Clock: button_i[31]_AND_51_o falling
+
+  Data Path: button to i_7_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_i[31]_AND_52_o1 (button_i[31]_AND_52_o)
+     LDC:CLR                   0.459          i_7_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_i[31]_AND_53_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       i_6_LDC (LATCH)
+  Destination Clock: button_i[31]_AND_53_o falling
+
+  Data Path: button to i_6_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_i[31]_AND_54_o1 (button_i[31]_AND_54_o)
+     LDC:CLR                   0.459          i_6_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_i[31]_AND_61_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       i_2_LDC (LATCH)
+  Destination Clock: button_i[31]_AND_61_o falling
+
+  Data Path: button to i_2_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_i[31]_AND_62_o1 (button_i[31]_AND_62_o)
+     LDC:CLR                   0.459          i_2_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_i[31]_AND_57_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       i_4_LDC (LATCH)
+  Destination Clock: button_i[31]_AND_57_o falling
+
+  Data Path: button to i_4_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_i[31]_AND_58_o1 (button_i[31]_AND_58_o)
+     LDC:CLR                   0.459          i_4_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_i[31]_AND_59_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       i_3_LDC (LATCH)
+  Destination Clock: button_i[31]_AND_59_o falling
+
+  Data Path: button to i_3_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_i[31]_AND_60_o1 (button_i[31]_AND_60_o)
+     LDC:CLR                   0.459          i_3_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_data[7]_AND_69_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       data_7_LDC (LATCH)
+  Destination Clock: button_data[7]_AND_69_o falling
+
+  Data Path: button to data_7_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_data[7]_AND_70_o1 (button_data[7]_AND_70_o)
+     LDC:CLR                   0.459          data_7_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_i[31]_AND_63_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       i_1_LDC (LATCH)
+  Destination Clock: button_i[31]_AND_63_o falling
+
+  Data Path: button to i_1_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_i[31]_AND_64_o1 (button_i[31]_AND_64_o)
+     LDC:CLR                   0.459          i_1_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_i[31]_AND_65_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       i_0_LDC (LATCH)
+  Destination Clock: button_i[31]_AND_65_o falling
+
+  Data Path: button to i_0_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_i[31]_AND_66_o1 (button_i[31]_AND_66_o)
+     LDC:CLR                   0.459          i_0_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_data[7]_AND_75_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       data_4_LDC (LATCH)
+  Destination Clock: button_data[7]_AND_75_o falling
+
+  Data Path: button to data_4_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_data[7]_AND_76_o1 (button_data[7]_AND_76_o)
+     LDC:CLR                   0.459          data_4_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_data[7]_AND_71_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       data_6_LDC (LATCH)
+  Destination Clock: button_data[7]_AND_71_o falling
+
+  Data Path: button to data_6_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_data[7]_AND_72_o1 (button_data[7]_AND_72_o)
+     LDC:CLR                   0.459          data_6_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_data[7]_AND_73_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       data_5_LDC (LATCH)
+  Destination Clock: button_data[7]_AND_73_o falling
+
+  Data Path: button to data_5_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_data[7]_AND_74_o1 (button_data[7]_AND_74_o)
+     LDC:CLR                   0.459          data_5_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_data[7]_AND_81_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       data_1_LDC (LATCH)
+  Destination Clock: button_data[7]_AND_81_o falling
+
+  Data Path: button to data_1_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_data[7]_AND_82_o1 (button_data[7]_AND_82_o)
+     LDC:CLR                   0.459          data_1_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_data[7]_AND_77_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       data_3_LDC (LATCH)
+  Destination Clock: button_data[7]_AND_77_o falling
+
+  Data Path: button to data_3_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_data[7]_AND_78_o1 (button_data[7]_AND_78_o)
+     LDC:CLR                   0.459          data_3_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_data[7]_AND_79_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       data_2_LDC (LATCH)
+  Destination Clock: button_data[7]_AND_79_o falling
+
+  Data Path: button to data_2_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_data[7]_AND_80_o1 (button_data[7]_AND_80_o)
+     LDC:CLR                   0.459          data_2_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_j[31]_AND_87_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       j_30_LDC (LATCH)
+  Destination Clock: button_j[31]_AND_87_o falling
+
+  Data Path: button to j_30_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_j[31]_AND_88_o1 (button_j[31]_AND_88_o)
+     LDC:CLR                   0.459          j_30_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_j[31]_AND_85_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       j_31_LDC (LATCH)
+  Destination Clock: button_j[31]_AND_85_o falling
+
+  Data Path: button to j_31_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_j[31]_AND_86_o1 (button_j[31]_AND_86_o)
+     LDC:CLR                   0.459          j_31_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_j[31]_AND_89_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       j_29_LDC (LATCH)
+  Destination Clock: button_j[31]_AND_89_o falling
+
+  Data Path: button to j_29_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_j[31]_AND_90_o1 (button_j[31]_AND_90_o)
+     LDC:CLR                   0.459          j_29_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_j[31]_AND_91_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       j_28_LDC (LATCH)
+  Destination Clock: button_j[31]_AND_91_o falling
+
+  Data Path: button to j_28_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_j[31]_AND_92_o1 (button_j[31]_AND_92_o)
+     LDC:CLR                   0.459          j_28_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_j[31]_AND_93_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       j_27_LDC (LATCH)
+  Destination Clock: button_j[31]_AND_93_o falling
+
+  Data Path: button to j_27_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_j[31]_AND_94_o1 (button_j[31]_AND_94_o)
+     LDC:CLR                   0.459          j_27_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_j[31]_AND_95_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       j_26_LDC (LATCH)
+  Destination Clock: button_j[31]_AND_95_o falling
+
+  Data Path: button to j_26_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_j[31]_AND_96_o1 (button_j[31]_AND_96_o)
+     LDC:CLR                   0.459          j_26_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_j[31]_AND_101_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       j_23_LDC (LATCH)
+  Destination Clock: button_j[31]_AND_101_o falling
+
+  Data Path: button to j_23_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_j[31]_AND_102_o1 (button_j[31]_AND_102_o)
+     LDC:CLR                   0.459          j_23_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_j[31]_AND_97_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       j_25_LDC (LATCH)
+  Destination Clock: button_j[31]_AND_97_o falling
+
+  Data Path: button to j_25_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_j[31]_AND_98_o1 (button_j[31]_AND_98_o)
+     LDC:CLR                   0.459          j_25_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_j[31]_AND_99_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       j_24_LDC (LATCH)
+  Destination Clock: button_j[31]_AND_99_o falling
+
+  Data Path: button to j_24_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_j[31]_AND_100_o1 (button_j[31]_AND_100_o)
+     LDC:CLR                   0.459          j_24_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_j[31]_AND_107_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       j_20_LDC (LATCH)
+  Destination Clock: button_j[31]_AND_107_o falling
+
+  Data Path: button to j_20_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_j[31]_AND_108_o1 (button_j[31]_AND_108_o)
+     LDC:CLR                   0.459          j_20_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_j[31]_AND_103_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       j_22_LDC (LATCH)
+  Destination Clock: button_j[31]_AND_103_o falling
+
+  Data Path: button to j_22_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_j[31]_AND_104_o1 (button_j[31]_AND_104_o)
+     LDC:CLR                   0.459          j_22_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_j[31]_AND_105_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       j_21_LDC (LATCH)
+  Destination Clock: button_j[31]_AND_105_o falling
+
+  Data Path: button to j_21_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_j[31]_AND_106_o1 (button_j[31]_AND_106_o)
+     LDC:CLR                   0.459          j_21_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_j[31]_AND_113_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       j_17_LDC (LATCH)
+  Destination Clock: button_j[31]_AND_113_o falling
+
+  Data Path: button to j_17_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_j[31]_AND_114_o1 (button_j[31]_AND_114_o)
+     LDC:CLR                   0.459          j_17_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_j[31]_AND_109_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       j_19_LDC (LATCH)
+  Destination Clock: button_j[31]_AND_109_o falling
+
+  Data Path: button to j_19_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_j[31]_AND_110_o1 (button_j[31]_AND_110_o)
+     LDC:CLR                   0.459          j_19_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_j[31]_AND_111_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       j_18_LDC (LATCH)
+  Destination Clock: button_j[31]_AND_111_o falling
+
+  Data Path: button to j_18_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_j[31]_AND_112_o1 (button_j[31]_AND_112_o)
+     LDC:CLR                   0.459          j_18_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_j[31]_AND_119_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       j_14_LDC (LATCH)
+  Destination Clock: button_j[31]_AND_119_o falling
+
+  Data Path: button to j_14_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_j[31]_AND_120_o1 (button_j[31]_AND_120_o)
+     LDC:CLR                   0.459          j_14_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_j[31]_AND_115_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       j_16_LDC (LATCH)
+  Destination Clock: button_j[31]_AND_115_o falling
+
+  Data Path: button to j_16_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_j[31]_AND_116_o1 (button_j[31]_AND_116_o)
+     LDC:CLR                   0.459          j_16_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_j[31]_AND_117_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       j_15_LDC (LATCH)
+  Destination Clock: button_j[31]_AND_117_o falling
+
+  Data Path: button to j_15_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_j[31]_AND_118_o1 (button_j[31]_AND_118_o)
+     LDC:CLR                   0.459          j_15_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_j[31]_AND_125_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       j_11_LDC (LATCH)
+  Destination Clock: button_j[31]_AND_125_o falling
+
+  Data Path: button to j_11_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_j[31]_AND_126_o1 (button_j[31]_AND_126_o)
+     LDC:CLR                   0.459          j_11_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_j[31]_AND_121_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       j_13_LDC (LATCH)
+  Destination Clock: button_j[31]_AND_121_o falling
+
+  Data Path: button to j_13_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_j[31]_AND_122_o1 (button_j[31]_AND_122_o)
+     LDC:CLR                   0.459          j_13_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_j[31]_AND_123_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       j_12_LDC (LATCH)
+  Destination Clock: button_j[31]_AND_123_o falling
+
+  Data Path: button to j_12_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_j[31]_AND_124_o1 (button_j[31]_AND_124_o)
+     LDC:CLR                   0.459          j_12_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_j[31]_AND_131_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       j_8_LDC (LATCH)
+  Destination Clock: button_j[31]_AND_131_o falling
+
+  Data Path: button to j_8_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_j[31]_AND_132_o1 (button_j[31]_AND_132_o)
+     LDC:CLR                   0.459          j_8_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_j[31]_AND_127_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       j_10_LDC (LATCH)
+  Destination Clock: button_j[31]_AND_127_o falling
+
+  Data Path: button to j_10_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_j[31]_AND_128_o1 (button_j[31]_AND_128_o)
+     LDC:CLR                   0.459          j_10_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_j[31]_AND_129_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       j_9_LDC (LATCH)
+  Destination Clock: button_j[31]_AND_129_o falling
+
+  Data Path: button to j_9_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_j[31]_AND_130_o1 (button_j[31]_AND_130_o)
+     LDC:CLR                   0.459          j_9_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_j[31]_AND_137_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       j_5_LDC (LATCH)
+  Destination Clock: button_j[31]_AND_137_o falling
+
+  Data Path: button to j_5_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_j[31]_AND_138_o1 (button_j[31]_AND_138_o)
+     LDC:CLR                   0.459          j_5_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_j[31]_AND_133_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       j_7_LDC (LATCH)
+  Destination Clock: button_j[31]_AND_133_o falling
+
+  Data Path: button to j_7_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_j[31]_AND_134_o1 (button_j[31]_AND_134_o)
+     LDC:CLR                   0.459          j_7_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_j[31]_AND_135_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       j_6_LDC (LATCH)
+  Destination Clock: button_j[31]_AND_135_o falling
+
+  Data Path: button to j_6_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_j[31]_AND_136_o1 (button_j[31]_AND_136_o)
+     LDC:CLR                   0.459          j_6_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_j[31]_AND_143_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       j_2_LDC (LATCH)
+  Destination Clock: button_j[31]_AND_143_o falling
+
+  Data Path: button to j_2_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_j[31]_AND_144_o1 (button_j[31]_AND_144_o)
+     LDC:CLR                   0.459          j_2_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_j[31]_AND_139_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       j_4_LDC (LATCH)
+  Destination Clock: button_j[31]_AND_139_o falling
+
+  Data Path: button to j_4_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_j[31]_AND_140_o1 (button_j[31]_AND_140_o)
+     LDC:CLR                   0.459          j_4_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_j[31]_AND_141_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       j_3_LDC (LATCH)
+  Destination Clock: button_j[31]_AND_141_o falling
+
+  Data Path: button to j_3_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_j[31]_AND_142_o1 (button_j[31]_AND_142_o)
+     LDC:CLR                   0.459          j_3_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_j[31]_AND_145_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       j_1_LDC (LATCH)
+  Destination Clock: button_j[31]_AND_145_o falling
+
+  Data Path: button to j_1_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_j[31]_AND_146_o1 (button_j[31]_AND_146_o)
+     LDC:CLR                   0.459          j_1_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_j[31]_AND_148_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       j_0_LDC1 (LATCH)
+  Destination Clock: button_j[31]_AND_148_o falling
+
+  Data Path: button to j_0_LDC1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_j[31]_AND_147_o1 (j_0_LDC)
+     LDP:PRE                   0.459          j_0_LDC1
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'button_data[7]_AND_83_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.230ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       data_0_LDC (LATCH)
+  Destination Clock: button_data[7]_AND_83_o falling
+
+  Data Path: button to data_0_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.468  button_IBUF (led_OBUF)
+     LUT2:I0->O            2   0.250   0.725  button_data[7]_AND_84_o1 (button_data[7]_AND_84_o)
+     LDC:CLR                   0.459          data_0_LDC
+    ----------------------------------------
+    Total                      5.230ns (2.037ns logic, 3.193ns route)
+                                       (38.9% logic, 61.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'button_data[7]_AND_69_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.363ns (Levels of Logic = 2)
+  Source:            data_7_LDC (LATCH)
+  Destination:       data<7> (PAD)
+  Source Clock:      button_data[7]_AND_69_o falling
+
+  Data Path: data_7_LDC to data<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.581   0.910  data_7_LDC (data_7_LDC)
+     LUT3:I0->O            2   0.235   0.725  data_71 (data_7)
+     OBUF:I->O                 2.912          data_7_OBUF (data<7>)
+    ----------------------------------------
+    Total                      5.363ns (3.728ns logic, 1.635ns route)
+                                       (69.5% logic, 30.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 20 / 10
+-------------------------------------------------------------------------
+Offset:              5.242ns (Levels of Logic = 2)
+  Source:            data_6_C_6 (FF)
+  Destination:       data<6> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: data_6_C_6 to data<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.525   0.790  data_6_C_6 (data_6_C_6)
+     LUT3:I1->O            3   0.250   0.765  data_61 (data_6)
+     OBUF:I->O                 2.912          data_6_OBUF (data<6>)
+    ----------------------------------------
+    Total                      5.242ns (3.687ns logic, 1.555ns route)
+                                       (70.3% logic, 29.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'button_data[7]_AND_71_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.403ns (Levels of Logic = 2)
+  Source:            data_6_LDC (LATCH)
+  Destination:       data<6> (PAD)
+  Source Clock:      button_data[7]_AND_71_o falling
+
+  Data Path: data_6_LDC to data<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.581   0.910  data_6_LDC (data_6_LDC)
+     LUT3:I0->O            3   0.235   0.765  data_61 (data_6)
+     OBUF:I->O                 2.912          data_6_OBUF (data<6>)
+    ----------------------------------------
+    Total                      5.403ns (3.728ns logic, 1.675ns route)
+                                       (69.0% logic, 31.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'button_data[7]_AND_73_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.403ns (Levels of Logic = 2)
+  Source:            data_5_LDC (LATCH)
+  Destination:       data<5> (PAD)
+  Source Clock:      button_data[7]_AND_73_o falling
+
+  Data Path: data_5_LDC to data<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.581   0.910  data_5_LDC (data_5_LDC)
+     LUT3:I0->O            3   0.235   0.765  data_51 (data_5)
+     OBUF:I->O                 2.912          data_5_OBUF (data<5>)
+    ----------------------------------------
+    Total                      5.403ns (3.728ns logic, 1.675ns route)
+                                       (69.0% logic, 31.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'button_data[7]_AND_75_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.403ns (Levels of Logic = 2)
+  Source:            data_4_LDC (LATCH)
+  Destination:       data<4> (PAD)
+  Source Clock:      button_data[7]_AND_75_o falling
+
+  Data Path: data_4_LDC to data<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.581   0.910  data_4_LDC (data_4_LDC)
+     LUT3:I0->O            3   0.235   0.765  data_41 (data_4)
+     OBUF:I->O                 2.912          data_4_OBUF (data<4>)
+    ----------------------------------------
+    Total                      5.403ns (3.728ns logic, 1.675ns route)
+                                       (69.0% logic, 31.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'button_data[7]_AND_77_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.403ns (Levels of Logic = 2)
+  Source:            data_3_LDC (LATCH)
+  Destination:       data<3> (PAD)
+  Source Clock:      button_data[7]_AND_77_o falling
+
+  Data Path: data_3_LDC to data<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.581   0.910  data_3_LDC (data_3_LDC)
+     LUT3:I0->O            3   0.235   0.765  data_31 (data_3)
+     OBUF:I->O                 2.912          data_3_OBUF (data<3>)
+    ----------------------------------------
+    Total                      5.403ns (3.728ns logic, 1.675ns route)
+                                       (69.0% logic, 31.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'button_data[7]_AND_79_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.403ns (Levels of Logic = 2)
+  Source:            data_2_LDC (LATCH)
+  Destination:       data<2> (PAD)
+  Source Clock:      button_data[7]_AND_79_o falling
+
+  Data Path: data_2_LDC to data<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.581   0.910  data_2_LDC (data_2_LDC)
+     LUT3:I0->O            3   0.235   0.765  data_21 (data_2)
+     OBUF:I->O                 2.912          data_2_OBUF (data<2>)
+    ----------------------------------------
+    Total                      5.403ns (3.728ns logic, 1.675ns route)
+                                       (69.0% logic, 31.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'button_data[7]_AND_81_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.363ns (Levels of Logic = 2)
+  Source:            data_1_LDC (LATCH)
+  Destination:       data<1> (PAD)
+  Source Clock:      button_data[7]_AND_81_o falling
+
+  Data Path: data_1_LDC to data<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.581   0.910  data_1_LDC (data_1_LDC)
+     LUT3:I0->O            2   0.235   0.725  data_11 (data_1)
+     OBUF:I->O                 2.912          data_1_OBUF (data<1>)
+    ----------------------------------------
+    Total                      5.363ns (3.728ns logic, 1.635ns route)
+                                       (69.5% logic, 30.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'button_data[7]_AND_83_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.403ns (Levels of Logic = 2)
+  Source:            data_0_LDC (LATCH)
+  Destination:       data<0> (PAD)
+  Source Clock:      button_data[7]_AND_83_o falling
+
+  Data Path: data_0_LDC to data<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.581   0.910  data_0_LDC (data_0_LDC)
+     LUT3:I0->O            3   0.235   0.765  data_01 (data_0)
+     OBUF:I->O                 2.912          data_0_OBUF (data<0>)
+    ----------------------------------------
+    Total                      5.403ns (3.728ns logic, 1.675ns route)
+                                       (69.0% logic, 31.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'button_lcd_e_AND_67_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.363ns (Levels of Logic = 2)
+  Source:            lcd_e_LDC (LATCH)
+  Destination:       lcd_e (PAD)
+  Source Clock:      button_lcd_e_AND_67_o falling
+
+  Data Path: lcd_e_LDC to lcd_e
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.581   0.954  lcd_e_LDC (lcd_e_LDC)
+     LUT3:I0->O            1   0.235   0.681  lcd_e1 (lcd_e_OBUF)
+     OBUF:I->O                 2.912          lcd_e_OBUF (lcd_e)
+    ----------------------------------------
+    Total                      5.363ns (3.728ns logic, 1.635ns route)
+                                       (69.5% logic, 30.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'button_lcd_rs_AND_149_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.319ns (Levels of Logic = 2)
+  Source:            lcd_rs_LDC (LATCH)
+  Destination:       lcd_rs (PAD)
+  Source Clock:      button_lcd_rs_AND_149_o falling
+
+  Data Path: lcd_rs_LDC to lcd_rs
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.581   0.910  lcd_rs_LDC (lcd_rs_LDC)
+     LUT3:I0->O            1   0.235   0.681  lcd_rs1 (lcd_rs_OBUF)
+     OBUF:I->O                 2.912          lcd_rs_OBUF (lcd_rs)
+    ----------------------------------------
+    Total                      5.319ns (3.728ns logic, 1.591ns route)
+                                       (70.1% logic, 29.9% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               6.599ns (Levels of Logic = 2)
+  Source:            button (PAD)
+  Destination:       led (PAD)
+
+  Data Path: button to led
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           149   1.328   2.359  button_IBUF (led_OBUF)
+     OBUF:I->O                 2.912          led_OBUF (led)
+    ----------------------------------------
+    Total                      6.599ns (4.240ns logic, 2.359ns route)
+                                       (64.3% logic, 35.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock button_data[7]_AND_69_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_data[7]_AND_71_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_data[7]_AND_73_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_data[7]_AND_75_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_data[7]_AND_77_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_data[7]_AND_79_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_data[7]_AND_81_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_data[7]_AND_83_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_i[31]_AND_11_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_i[31]_AND_13_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_i[31]_AND_15_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_i[31]_AND_17_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_i[31]_AND_19_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_i[31]_AND_21_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_i[31]_AND_23_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_i[31]_AND_25_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_i[31]_AND_27_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_i[31]_AND_29_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_i[31]_AND_31_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_i[31]_AND_33_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_i[31]_AND_35_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_i[31]_AND_37_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_i[31]_AND_39_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_i[31]_AND_3_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_i[31]_AND_41_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_i[31]_AND_43_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_i[31]_AND_45_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_i[31]_AND_47_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_i[31]_AND_49_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_i[31]_AND_51_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_i[31]_AND_53_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_i[31]_AND_55_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_i[31]_AND_57_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_i[31]_AND_59_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_i[31]_AND_5_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_i[31]_AND_61_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_i[31]_AND_63_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_i[31]_AND_65_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_i[31]_AND_7_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_i[31]_AND_9_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_j[31]_AND_101_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_j[31]_AND_103_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_j[31]_AND_105_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_j[31]_AND_107_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_j[31]_AND_109_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_j[31]_AND_111_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_j[31]_AND_113_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_j[31]_AND_115_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_j[31]_AND_117_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_j[31]_AND_119_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_j[31]_AND_121_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_j[31]_AND_123_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_j[31]_AND_125_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_j[31]_AND_127_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_j[31]_AND_129_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_j[31]_AND_131_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_j[31]_AND_133_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_j[31]_AND_135_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_j[31]_AND_137_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_j[31]_AND_139_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_j[31]_AND_141_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_j[31]_AND_143_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_j[31]_AND_145_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_j[31]_AND_148_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_j[31]_AND_85_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_j[31]_AND_87_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_j[31]_AND_89_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_j[31]_AND_91_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_j[31]_AND_93_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_j[31]_AND_95_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_j[31]_AND_97_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_j[31]_AND_99_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_lcd_e_AND_67_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button_lcd_rs_AND_149_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.689|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+-----------------------+---------+---------+---------+---------+
+                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------+---------+---------+---------+---------+
+button_data[7]_AND_69_o|         |    2.780|         |         |
+button_data[7]_AND_71_o|         |    2.820|         |         |
+button_data[7]_AND_73_o|         |    2.820|         |         |
+button_data[7]_AND_75_o|         |    2.820|         |         |
+button_data[7]_AND_77_o|         |    2.820|         |         |
+button_data[7]_AND_79_o|         |    2.820|         |         |
+button_data[7]_AND_81_o|         |    3.235|         |         |
+button_data[7]_AND_83_o|         |    2.820|         |         |
+button_i[31]_AND_11_o  |         |    8.915|         |         |
+button_i[31]_AND_13_o  |         |    8.904|         |         |
+button_i[31]_AND_15_o  |         |    8.943|         |         |
+button_i[31]_AND_17_o  |         |    8.779|         |         |
+button_i[31]_AND_19_o  |         |    8.784|         |         |
+button_i[31]_AND_21_o  |         |    8.938|         |         |
+button_i[31]_AND_23_o  |         |    8.775|         |         |
+button_i[31]_AND_25_o  |         |    8.922|         |         |
+button_i[31]_AND_27_o  |         |    8.793|         |         |
+button_i[31]_AND_29_o  |         |    8.981|         |         |
+button_i[31]_AND_31_o  |         |    8.760|         |         |
+button_i[31]_AND_33_o  |         |    8.871|         |         |
+button_i[31]_AND_35_o  |         |    8.976|         |         |
+button_i[31]_AND_37_o  |         |    9.048|         |         |
+button_i[31]_AND_39_o  |         |    8.884|         |         |
+button_i[31]_AND_3_o   |         |    8.884|         |         |
+button_i[31]_AND_41_o  |         |    8.831|         |         |
+button_i[31]_AND_43_o  |         |    8.792|         |         |
+button_i[31]_AND_45_o  |         |    8.999|         |         |
+button_i[31]_AND_47_o  |         |    8.822|         |         |
+button_i[31]_AND_49_o  |         |    8.889|         |         |
+button_i[31]_AND_51_o  |         |    8.806|         |         |
+button_i[31]_AND_53_o  |         |    8.999|         |         |
+button_i[31]_AND_55_o  |         |    8.807|         |         |
+button_i[31]_AND_57_o  |         |    8.704|         |         |
+button_i[31]_AND_59_o  |         |    8.809|         |         |
+button_i[31]_AND_5_o   |         |    8.592|         |         |
+button_i[31]_AND_61_o  |         |    8.876|         |         |
+button_i[31]_AND_63_o  |         |    9.055|         |         |
+button_i[31]_AND_65_o  |         |    9.030|         |         |
+button_i[31]_AND_7_o   |         |    8.727|         |         |
+button_i[31]_AND_9_o   |         |    8.761|         |         |
+button_j[31]_AND_101_o |         |    7.402|         |         |
+button_j[31]_AND_103_o |         |    7.425|         |         |
+button_j[31]_AND_105_o |         |    7.448|         |         |
+button_j[31]_AND_107_o |         |    7.472|         |         |
+button_j[31]_AND_109_o |         |    7.495|         |         |
+button_j[31]_AND_111_o |         |    7.518|         |         |
+button_j[31]_AND_113_o |         |    7.541|         |         |
+button_j[31]_AND_115_o |         |    7.565|         |         |
+button_j[31]_AND_117_o |         |    7.628|         |         |
+button_j[31]_AND_119_o |         |    7.651|         |         |
+button_j[31]_AND_121_o |         |    7.712|         |         |
+button_j[31]_AND_123_o |         |    7.736|         |         |
+button_j[31]_AND_125_o |         |    7.759|         |         |
+button_j[31]_AND_127_o |         |    7.788|         |         |
+button_j[31]_AND_129_o |         |    7.805|         |         |
+button_j[31]_AND_131_o |         |    7.829|         |         |
+button_j[31]_AND_133_o |         |    7.852|         |         |
+button_j[31]_AND_135_o |         |    7.875|         |         |
+button_j[31]_AND_137_o |         |    7.860|         |         |
+button_j[31]_AND_139_o |         |    7.884|         |         |
+button_j[31]_AND_141_o |         |    8.387|         |         |
+button_j[31]_AND_143_o |         |    8.410|         |         |
+button_j[31]_AND_145_o |         |    8.408|         |         |
+button_j[31]_AND_148_o |         |    7.052|         |         |
+button_j[31]_AND_85_o  |         |    7.045|         |         |
+button_j[31]_AND_87_o  |         |    7.239|         |         |
+button_j[31]_AND_89_o  |         |    7.262|         |         |
+button_j[31]_AND_91_o  |         |    7.286|         |         |
+button_j[31]_AND_93_o  |         |    7.309|         |         |
+button_j[31]_AND_95_o  |         |    7.332|         |         |
+button_j[31]_AND_97_o  |         |    7.355|         |         |
+button_j[31]_AND_99_o  |         |    7.379|         |         |
+button_lcd_e_AND_67_o  |         |    1.911|         |         |
+clk                    |    8.894|         |         |         |
+-----------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 40.00 secs
+Total CPU time to Xst completion: 40.05 secs
+ 
+--> 
+
+Total memory usage is 310284 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+
