@@ -17,10 +17,10 @@ port (   clk : in std_logic; ----clock i/p
 end lcd_disp;
 
 architecture Behavioral of lcd_disp is
-	constant N: integer :=13;
+	constant N: integer :=17;
 	type arr is array (1 to N) of std_logic_vector(7 downto 0);
-	constant datas : arr := (X"38",X"0c",X"06",X"01",X"C0",x"30",x"31",x"54",x"4e",x"43",x"53",x"49",x"4f"); --command and data to display
-	constant datap : arr := (X"38",X"0c",X"06",X"01",X"C0",x"31",x"49",x"54",x"43",x"4f",x"5f",x"49",x"46"); --command and data to display
+	constant datas : arr := (X"38",X"0c",X"06",X"01",X"C0",X"59",X"41",X"54",X"48",X"41",X"52",X"54",X"48",X"20",X"20",X"20",X"20"); --command and data to display
+	constant datap : arr := (X"38",X"0c",X"06",X"01",X"C0",X"4D",X"41",X"59",X"41",X"4E",X"4B",X"20",X"52",X"41",X"4A",X"41",X"4E"); --command and data to display
 	begin
 		lcd_rw <= '0'; ----lcd write
 		process(clk)
@@ -49,14 +49,14 @@ architecture Behavioral of lcd_disp is
 						lcd_rs <= '1'; ----data signal
 					end if;
 					
-					if j = 14 then ---repeated display of data
+					if j = 18 then ---repeated display of data
 						j := 5;
 					end if;
 				
 				end if;
+			
 			else 
 			led<='0';
-			
 			if clk'event and clk = '1' then
 					
 					if i <= 1000000 then
@@ -77,7 +77,7 @@ architecture Behavioral of lcd_disp is
 						lcd_rs <= '1'; ----data signal
 					end if;
 					
-					if j = 14 then ---repeated display of data
+					if j = 18 then ---repeated display of data
 						j := 5;
 					end if;
 				

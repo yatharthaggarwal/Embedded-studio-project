@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.25 secs
+Total CPU time to Xst completion: 0.29 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.26 secs
+Total CPU time to Xst completion: 0.29 secs
  
 --> Reading design: lcd_disp.prj
 
@@ -203,7 +203,7 @@ Synthesizing Unit <lcd_disp>.
     Found 1-bit register for signal <j<0>>.
     Found 32-bit adder for signal <i[31]_GND_5_o_add_5_OUT> created at line 39.
     Found 32-bit adder for signal <j[31]_GND_5_o_add_29_OUT> created at line 70.
-    Found 16x16-bit Read Only RAM for signal <_n0319>
+    Found 32x16-bit Read Only RAM for signal <_n0335>
     Found 32-bit comparator greater for signal <n0014> created at line 62
     Found 32-bit comparator greater for signal <GND_5_o_i[31]_LessThan_27_o> created at line 66
     Found 32-bit comparator greater for signal <n0028> created at line 74
@@ -220,7 +220,7 @@ HDL Synthesis Report
 
 Macro Statistics
 # RAMs                                                 : 1
- 16x16-bit single-port Read Only RAM                   : 1
+ 32x16-bit single-port Read Only RAM                   : 1
 # Adders/Subtractors                                   : 2
  32-bit adder                                          : 2
 # Registers                                            : 79
@@ -242,14 +242,14 @@ Macro Statistics
 
 
 Synthesizing (advanced) Unit <lcd_disp>.
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0319> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0335> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
     | Port A                                                              |
-    |     aspect ratio   | 16-word x 16-bit                    |          |
+    |     aspect ratio   | 32-word x 16-bit                    |          |
     |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <j<3:0>>        |          |
+    |     addrA          | connected to signal <j<4:0>>        |          |
     |     diA            | connected to signal <GND>           |          |
     |     doA            | connected to internal node          |          |
     -----------------------------------------------------------------------
@@ -260,7 +260,7 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # RAMs                                                 : 1
- 16x16-bit single-port distributed Read Only RAM       : 1
+ 32x16-bit single-port distributed Read Only RAM       : 1
 # Adders/Subtractors                                   : 2
  32-bit adder                                          : 2
 # Registers                                            : 148
@@ -380,7 +380,7 @@ Optimizing unit <lcd_disp> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block lcd_disp, actual ratio is 7.
+Found area constraint ratio of 100 (+ 5) on block lcd_disp, actual ratio is 8.
 
 Final Macro Processing ...
 
@@ -412,17 +412,17 @@ Top Level Output File Name         : lcd_disp.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 574
+# BELS                             : 598
 #      GND                         : 1
 #      INV                         : 1
 #      LUT1                        : 63
 #      LUT2                        : 148
-#      LUT3                        : 76
-#      LUT4                        : 7
-#      LUT5                        : 71
-#      LUT6                        : 59
+#      LUT3                        : 86
+#      LUT4                        : 6
+#      LUT5                        : 78
+#      LUT6                        : 58
 #      MUXCY                       : 82
-#      MUXF7                       : 1
+#      MUXF7                       : 10
 #      VCC                         : 1
 #      XORCY                       : 64
 # FlipFlops/Latches                : 296
@@ -445,14 +445,14 @@ Selected Device : 6slx9tqg144-2
 
 Slice Logic Utilization: 
  Number of Slice Registers:             296  out of  11440     2%  
- Number of Slice LUTs:                  425  out of   5720     7%  
-    Number used as Logic:               425  out of   5720     7%  
+ Number of Slice LUTs:                  440  out of   5720     7%  
+    Number used as Logic:               440  out of   5720     7%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    612
-   Number with an unused Flip Flop:     316  out of    612    51%  
-   Number with an unused LUT:           187  out of    612    30%  
-   Number of fully used LUT-FF pairs:   109  out of    612    17%  
+ Number of LUT Flip Flop pairs used:    626
+   Number with an unused Flip Flop:     330  out of    626    52%  
+   Number with an unused LUT:           186  out of    626    29%  
+   Number of fully used LUT-FF pairs:   110  out of    626    17%  
    Number of unique control sets:       223
 
 IO Utilization: 
@@ -572,9 +572,9 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 8.894ns (Maximum Frequency: 112.435MHz)
+   Minimum period: 9.597ns (Maximum Frequency: 104.195MHz)
    Minimum input arrival time before clock: 5.230ns
-   Maximum output required time after clock: 5.403ns
+   Maximum output required time after clock: 5.407ns
    Maximum combinational path delay: 6.599ns
 
 Timing Details:
@@ -583,30 +583,35 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 8.894ns (frequency: 112.435MHz)
-  Total number of paths / destination ports: 128572 / 370
+  Clock period: 9.597ns (frequency: 104.195MHz)
+  Total number of paths / destination ports: 161388 / 370
 -------------------------------------------------------------------------
-Delay:               8.894ns (Levels of Logic = 6)
-  Source:            i_1_C_1 (FF)
+Delay:               9.597ns (Levels of Logic = 11)
+  Source:            i_14_C_14 (FF)
   Destination:       _i000048_0 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: i_1_C_1 to _i000048_0
+  Data Path: i_14_C_14 to _i000048_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              2   0.525   0.834  i_1_C_1 (i_1_C_1)
-     LUT3:I1->O            3   0.250   1.221  i_11 (i_1)
-     LUT6:I0->O            3   0.254   1.196  GND_5_o_i[31]_equal_29_o<31>1 (GND_5_o_i[31]_equal_29_o<31>)
-     LUT6:I1->O           12   0.254   1.297  GND_5_o_i[31]_equal_29_o<31>7_1 (GND_5_o_i[31]_equal_29_o<31>7)
-     LUT5:I2->O            5   0.235   1.271  Mmux_j[31]_j[31]_mux_36_OUT191 (j[31]_j[31]_mux_36_OUT<26>)
-     LUT6:I1->O            3   0.254   0.994  GND_5_o_j[31]_equal_18_o<31>3 (GND_5_o_j[31]_equal_18_o<31>2)
-     LUT6:I3->O            3   0.235   0.000  Mmux_j[31]_GND_5_o_mux_18_OUT261 (j[31]_GND_5_o_mux_18_OUT<3>)
-     FD:D                      0.074          _i000048_3
+     FDC:C->Q              2   0.525   0.834  i_14_C_14 (i_14_C_14)
+     LUT3:I1->O            6   0.250   1.306  i_141 (i_14)
+     LUT5:I0->O            1   0.254   0.000  Mcompar_n0014_lut<2> (Mcompar_n0014_lut<2>)
+     MUXCY:S->O            1   0.215   0.000  Mcompar_n0014_cy<2> (Mcompar_n0014_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_n0014_cy<3> (Mcompar_n0014_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_n0014_cy<4> (Mcompar_n0014_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_n0014_cy<5> (Mcompar_n0014_cy<5>)
+     MUXCY:CI->O          90   0.235   2.131  Mcompar_n0014_cy<6> (Mcompar_n0014_cy<6>)
+     LUT5:I4->O            5   0.254   1.271  Mmux_j[31]_j[31]_mux_36_OUT241 (j[31]_j[31]_mux_36_OUT<30>)
+     LUT6:I1->O            4   0.254   0.803  GND_5_o_j[31]_equal_18_o<31>3 (GND_5_o_j[31]_equal_18_o<31>2)
+     MUXF7:S->O            1   0.185   0.682  GND_5_o_j[31]_equal_18_o<31>7_SW4 (N39)
+     LUT6:I5->O            3   0.254   0.000  Mmux_j[31]_GND_5_o_mux_18_OUT11 (j[31]_GND_5_o_mux_18_OUT<0>)
+     FD:D                      0.074          _i000048_0
     ----------------------------------------
-    Total                      8.894ns (2.081ns logic, 6.813ns route)
-                                       (23.4% logic, 76.6% route)
+    Total                      9.597ns (2.570ns logic, 7.027ns route)
+                                       (26.8% logic, 73.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'button_lcd_rs_AND_149_o'
@@ -2132,7 +2137,7 @@ Offset:              5.363ns (Levels of Logic = 2)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
   Total number of paths / destination ports: 20 / 10
 -------------------------------------------------------------------------
-Offset:              5.242ns (Levels of Logic = 2)
+Offset:              5.246ns (Levels of Logic = 2)
   Source:            data_6_C_6 (FF)
   Destination:       data<6> (PAD)
   Source Clock:      clk rising
@@ -2141,18 +2146,18 @@ Offset:              5.242ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              1   0.525   0.790  data_6_C_6 (data_6_C_6)
-     LUT3:I1->O            3   0.250   0.765  data_61 (data_6)
+     FDC:C->Q              2   0.525   0.834  data_6_C_6 (data_6_C_6)
+     LUT3:I1->O            2   0.250   0.725  data_61 (data_6)
      OBUF:I->O                 2.912          data_6_OBUF (data<6>)
     ----------------------------------------
-    Total                      5.242ns (3.687ns logic, 1.555ns route)
+    Total                      5.246ns (3.687ns logic, 1.559ns route)
                                        (70.3% logic, 29.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'button_data[7]_AND_71_o'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              5.403ns (Levels of Logic = 2)
+Offset:              5.407ns (Levels of Logic = 2)
   Source:            data_6_LDC (LATCH)
   Destination:       data<6> (PAD)
   Source Clock:      button_data[7]_AND_71_o falling
@@ -2161,12 +2166,12 @@ Offset:              5.403ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LDC:G->Q              1   0.581   0.910  data_6_LDC (data_6_LDC)
-     LUT3:I0->O            3   0.235   0.765  data_61 (data_6)
+     LDC:G->Q              2   0.581   0.954  data_6_LDC (data_6_LDC)
+     LUT3:I0->O            2   0.235   0.725  data_61 (data_6)
      OBUF:I->O                 2.912          data_6_OBUF (data<6>)
     ----------------------------------------
-    Total                      5.403ns (3.728ns logic, 1.675ns route)
-                                       (69.0% logic, 31.0% route)
+    Total                      5.407ns (3.728ns logic, 1.679ns route)
+                                       (68.9% logic, 31.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'button_data[7]_AND_73_o'
@@ -2192,7 +2197,7 @@ Offset:              5.403ns (Levels of Logic = 2)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'button_data[7]_AND_75_o'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              5.403ns (Levels of Logic = 2)
+Offset:              5.407ns (Levels of Logic = 2)
   Source:            data_4_LDC (LATCH)
   Destination:       data<4> (PAD)
   Source Clock:      button_data[7]_AND_75_o falling
@@ -2201,12 +2206,12 @@ Offset:              5.403ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LDC:G->Q              1   0.581   0.910  data_4_LDC (data_4_LDC)
-     LUT3:I0->O            3   0.235   0.765  data_41 (data_4)
+     LDC:G->Q              2   0.581   0.954  data_4_LDC (data_4_LDC)
+     LUT3:I0->O            2   0.235   0.725  data_41 (data_4)
      OBUF:I->O                 2.912          data_4_OBUF (data<4>)
     ----------------------------------------
-    Total                      5.403ns (3.728ns logic, 1.675ns route)
-                                       (69.0% logic, 31.0% route)
+    Total                      5.407ns (3.728ns logic, 1.679ns route)
+                                       (68.9% logic, 31.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'button_data[7]_AND_77_o'
@@ -2221,8 +2226,8 @@ Offset:              5.403ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LDC:G->Q              1   0.581   0.910  data_3_LDC (data_3_LDC)
-     LUT3:I0->O            3   0.235   0.765  data_31 (data_3)
+     LDC:G->Q              3   0.581   0.994  data_3_LDC (data_3_LDC)
+     LUT3:I0->O            1   0.235   0.681  data_31 (data_3)
      OBUF:I->O                 2.912          data_3_OBUF (data<3>)
     ----------------------------------------
     Total                      5.403ns (3.728ns logic, 1.675ns route)
@@ -2241,8 +2246,8 @@ Offset:              5.403ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LDC:G->Q              1   0.581   0.910  data_2_LDC (data_2_LDC)
-     LUT3:I0->O            3   0.235   0.765  data_21 (data_2)
+     LDC:G->Q              3   0.581   0.994  data_2_LDC (data_2_LDC)
+     LUT3:I0->O            1   0.235   0.681  data_21 (data_2)
      OBUF:I->O                 2.912          data_2_OBUF (data<2>)
     ----------------------------------------
     Total                      5.403ns (3.728ns logic, 1.675ns route)
@@ -2252,7 +2257,7 @@ Offset:              5.403ns (Levels of Logic = 2)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'button_data[7]_AND_81_o'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              5.363ns (Levels of Logic = 2)
+Offset:              5.407ns (Levels of Logic = 2)
   Source:            data_1_LDC (LATCH)
   Destination:       data<1> (PAD)
   Source Clock:      button_data[7]_AND_81_o falling
@@ -2261,12 +2266,12 @@ Offset:              5.363ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LDC:G->Q              1   0.581   0.910  data_1_LDC (data_1_LDC)
+     LDC:G->Q              2   0.581   0.954  data_1_LDC (data_1_LDC)
      LUT3:I0->O            2   0.235   0.725  data_11 (data_1)
      OBUF:I->O                 2.912          data_1_OBUF (data<1>)
     ----------------------------------------
-    Total                      5.363ns (3.728ns logic, 1.635ns route)
-                                       (69.5% logic, 30.5% route)
+    Total                      5.407ns (3.728ns logic, 1.679ns route)
+                                       (68.9% logic, 31.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'button_data[7]_AND_83_o'
@@ -2281,8 +2286,8 @@ Offset:              5.403ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LDC:G->Q              1   0.581   0.910  data_0_LDC (data_0_LDC)
-     LUT3:I0->O            3   0.235   0.765  data_01 (data_0)
+     LDC:G->Q              3   0.581   0.994  data_0_LDC (data_0_LDC)
+     LUT3:I0->O            1   0.235   0.681  data_01 (data_0)
      OBUF:I->O                 2.912          data_0_OBUF (data<0>)
     ----------------------------------------
     Total                      5.403ns (3.728ns logic, 1.675ns route)
@@ -2948,87 +2953,87 @@ Clock to Setup on destination clock clk
                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------+---------+---------+---------+---------+
-button_data[7]_AND_69_o|         |    2.780|         |         |
-button_data[7]_AND_71_o|         |    2.820|         |         |
-button_data[7]_AND_73_o|         |    2.820|         |         |
-button_data[7]_AND_75_o|         |    2.820|         |         |
-button_data[7]_AND_77_o|         |    2.820|         |         |
-button_data[7]_AND_79_o|         |    2.820|         |         |
-button_data[7]_AND_81_o|         |    3.235|         |         |
-button_data[7]_AND_83_o|         |    2.820|         |         |
-button_i[31]_AND_11_o  |         |    8.915|         |         |
-button_i[31]_AND_13_o  |         |    8.904|         |         |
-button_i[31]_AND_15_o  |         |    8.943|         |         |
-button_i[31]_AND_17_o  |         |    8.779|         |         |
-button_i[31]_AND_19_o  |         |    8.784|         |         |
-button_i[31]_AND_21_o  |         |    8.938|         |         |
-button_i[31]_AND_23_o  |         |    8.775|         |         |
-button_i[31]_AND_25_o  |         |    8.922|         |         |
-button_i[31]_AND_27_o  |         |    8.793|         |         |
-button_i[31]_AND_29_o  |         |    8.981|         |         |
-button_i[31]_AND_31_o  |         |    8.760|         |         |
-button_i[31]_AND_33_o  |         |    8.871|         |         |
-button_i[31]_AND_35_o  |         |    8.976|         |         |
-button_i[31]_AND_37_o  |         |    9.048|         |         |
-button_i[31]_AND_39_o  |         |    8.884|         |         |
-button_i[31]_AND_3_o   |         |    8.884|         |         |
-button_i[31]_AND_41_o  |         |    8.831|         |         |
-button_i[31]_AND_43_o  |         |    8.792|         |         |
-button_i[31]_AND_45_o  |         |    8.999|         |         |
-button_i[31]_AND_47_o  |         |    8.822|         |         |
-button_i[31]_AND_49_o  |         |    8.889|         |         |
-button_i[31]_AND_51_o  |         |    8.806|         |         |
-button_i[31]_AND_53_o  |         |    8.999|         |         |
-button_i[31]_AND_55_o  |         |    8.807|         |         |
-button_i[31]_AND_57_o  |         |    8.704|         |         |
-button_i[31]_AND_59_o  |         |    8.809|         |         |
-button_i[31]_AND_5_o   |         |    8.592|         |         |
-button_i[31]_AND_61_o  |         |    8.876|         |         |
-button_i[31]_AND_63_o  |         |    9.055|         |         |
-button_i[31]_AND_65_o  |         |    9.030|         |         |
-button_i[31]_AND_7_o   |         |    8.727|         |         |
-button_i[31]_AND_9_o   |         |    8.761|         |         |
-button_j[31]_AND_101_o |         |    7.402|         |         |
-button_j[31]_AND_103_o |         |    7.425|         |         |
-button_j[31]_AND_105_o |         |    7.448|         |         |
-button_j[31]_AND_107_o |         |    7.472|         |         |
-button_j[31]_AND_109_o |         |    7.495|         |         |
-button_j[31]_AND_111_o |         |    7.518|         |         |
-button_j[31]_AND_113_o |         |    7.541|         |         |
-button_j[31]_AND_115_o |         |    7.565|         |         |
-button_j[31]_AND_117_o |         |    7.628|         |         |
-button_j[31]_AND_119_o |         |    7.651|         |         |
-button_j[31]_AND_121_o |         |    7.712|         |         |
-button_j[31]_AND_123_o |         |    7.736|         |         |
-button_j[31]_AND_125_o |         |    7.759|         |         |
-button_j[31]_AND_127_o |         |    7.788|         |         |
-button_j[31]_AND_129_o |         |    7.805|         |         |
-button_j[31]_AND_131_o |         |    7.829|         |         |
-button_j[31]_AND_133_o |         |    7.852|         |         |
-button_j[31]_AND_135_o |         |    7.875|         |         |
-button_j[31]_AND_137_o |         |    7.860|         |         |
-button_j[31]_AND_139_o |         |    7.884|         |         |
-button_j[31]_AND_141_o |         |    8.387|         |         |
-button_j[31]_AND_143_o |         |    8.410|         |         |
-button_j[31]_AND_145_o |         |    8.408|         |         |
-button_j[31]_AND_148_o |         |    7.052|         |         |
-button_j[31]_AND_85_o  |         |    7.045|         |         |
-button_j[31]_AND_87_o  |         |    7.239|         |         |
-button_j[31]_AND_89_o  |         |    7.262|         |         |
-button_j[31]_AND_91_o  |         |    7.286|         |         |
-button_j[31]_AND_93_o  |         |    7.309|         |         |
-button_j[31]_AND_95_o  |         |    7.332|         |         |
-button_j[31]_AND_97_o  |         |    7.355|         |         |
-button_j[31]_AND_99_o  |         |    7.379|         |         |
+button_data[7]_AND_69_o|         |    3.235|         |         |
+button_data[7]_AND_71_o|         |    2.824|         |         |
+button_data[7]_AND_73_o|         |    3.275|         |         |
+button_data[7]_AND_75_o|         |    3.279|         |         |
+button_data[7]_AND_77_o|         |    2.047|         |         |
+button_data[7]_AND_79_o|         |    2.047|         |         |
+button_data[7]_AND_81_o|         |    2.824|         |         |
+button_data[7]_AND_83_o|         |    2.047|         |         |
+button_i[31]_AND_11_o  |         |    9.610|         |         |
+button_i[31]_AND_13_o  |         |    9.599|         |         |
+button_i[31]_AND_15_o  |         |    9.654|         |         |
+button_i[31]_AND_17_o  |         |    9.413|         |         |
+button_i[31]_AND_19_o  |         |    9.479|         |         |
+button_i[31]_AND_21_o  |         |    9.633|         |         |
+button_i[31]_AND_23_o  |         |    9.486|         |         |
+button_i[31]_AND_25_o  |         |    9.633|         |         |
+button_i[31]_AND_27_o  |         |    9.503|         |         |
+button_i[31]_AND_29_o  |         |    9.691|         |         |
+button_i[31]_AND_31_o  |         |    9.470|         |         |
+button_i[31]_AND_33_o  |         |    9.581|         |         |
+button_i[31]_AND_35_o  |         |    9.671|         |         |
+button_i[31]_AND_37_o  |         |    9.758|         |         |
+button_i[31]_AND_39_o  |         |    9.518|         |         |
+button_i[31]_AND_3_o   |         |    9.579|         |         |
+button_i[31]_AND_41_o  |         |    9.526|         |         |
+button_i[31]_AND_43_o  |         |    9.502|         |         |
+button_i[31]_AND_45_o  |         |    9.694|         |         |
+button_i[31]_AND_47_o  |         |    9.517|         |         |
+button_i[31]_AND_49_o  |         |    9.594|         |         |
+button_i[31]_AND_51_o  |         |    9.517|         |         |
+button_i[31]_AND_53_o  |         |    9.710|         |         |
+button_i[31]_AND_55_o  |         |    9.518|         |         |
+button_i[31]_AND_57_o  |         |    9.338|         |         |
+button_i[31]_AND_59_o  |         |    9.443|         |         |
+button_i[31]_AND_5_o   |         |    9.287|         |         |
+button_i[31]_AND_61_o  |         |    9.510|         |         |
+button_i[31]_AND_63_o  |         |    9.689|         |         |
+button_i[31]_AND_65_o  |         |    9.695|         |         |
+button_i[31]_AND_7_o   |         |    9.422|         |         |
+button_i[31]_AND_9_o   |         |    9.456|         |         |
+button_j[31]_AND_101_o |         |    8.002|         |         |
+button_j[31]_AND_103_o |         |    8.025|         |         |
+button_j[31]_AND_105_o |         |    8.048|         |         |
+button_j[31]_AND_107_o |         |    8.071|         |         |
+button_j[31]_AND_109_o |         |    8.095|         |         |
+button_j[31]_AND_111_o |         |    8.118|         |         |
+button_j[31]_AND_113_o |         |    8.141|         |         |
+button_j[31]_AND_115_o |         |    8.164|         |         |
+button_j[31]_AND_117_o |         |    8.228|         |         |
+button_j[31]_AND_119_o |         |    8.251|         |         |
+button_j[31]_AND_121_o |         |    8.349|         |         |
+button_j[31]_AND_123_o |         |    8.372|         |         |
+button_j[31]_AND_125_o |         |    8.396|         |         |
+button_j[31]_AND_127_o |         |    8.426|         |         |
+button_j[31]_AND_129_o |         |    8.477|         |         |
+button_j[31]_AND_131_o |         |    8.390|         |         |
+button_j[31]_AND_133_o |         |    8.414|         |         |
+button_j[31]_AND_135_o |         |    8.437|         |         |
+button_j[31]_AND_137_o |         |    8.420|         |         |
+button_j[31]_AND_139_o |         |    8.970|         |         |
+button_j[31]_AND_141_o |         |    8.923|         |         |
+button_j[31]_AND_143_o |         |    8.973|         |         |
+button_j[31]_AND_145_o |         |    9.053|         |         |
+button_j[31]_AND_148_o |         |    7.745|         |         |
+button_j[31]_AND_85_o  |         |    6.849|         |         |
+button_j[31]_AND_87_o  |         |    7.590|         |         |
+button_j[31]_AND_89_o  |         |    7.862|         |         |
+button_j[31]_AND_91_o  |         |    7.885|         |         |
+button_j[31]_AND_93_o  |         |    7.909|         |         |
+button_j[31]_AND_95_o  |         |    7.932|         |         |
+button_j[31]_AND_97_o  |         |    7.955|         |         |
+button_j[31]_AND_99_o  |         |    7.978|         |         |
 button_lcd_e_AND_67_o  |         |    1.911|         |         |
-clk                    |    8.894|         |         |         |
+clk                    |    9.597|         |         |         |
 -----------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 40.00 secs
-Total CPU time to Xst completion: 40.05 secs
+Total REAL time to Xst completion: 55.00 secs
+Total CPU time to Xst completion: 54.78 secs
  
 --> 
 
